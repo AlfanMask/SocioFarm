@@ -1,0 +1,50 @@
+/* SETUP PALETTE */
+/* 
+COLOR
+Primary:#000000
+Secondary:#FFA12D
+Accent:#FFFFFF;
+*/
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* NAVBAR */
+a.nav-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+li.nav-item{
+    margin: 0 5px;
+}
+.nav-right{
+    width: 100% !important;
+    padding:8px 0;
+    margin-top:16px;
+    vertical-align: middle;
+}
+.nav-right li{
+    list-style-type: none;
+    float:right !important;
+}
+.nav-right a.link-login{
+    padding: 10px 40px;
+    color:#FFA12D;
+    border-radius: 5px;
+}
+.nav-right a.link-register{
+    background-color: #FFA12D !important;
+    padding: 10px 40px;
+    color:#FFFFFF;
+    border-radius: 5px;
+}
+
+/* CAROUSEL */
+/* a.carousel-control-next span{
+    background-color: #fff !important;
+    border-radius: 50%;
+    color:#000 !important;
+} */
