@@ -5,11 +5,25 @@ Primary:#000000
 Secondary:#FFA12D
 Accent:#FFFFFF;
 */
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 p {
     font-family: 'DM Sans', sans-serif;
+}
+h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+body{
+    background-color: #F7F7F7;
+}
+h5{
+    font-size: 20px;
 }
 
 /* NAVBAR */
@@ -42,9 +56,101 @@ li.nav-item{
     border-radius: 5px;
 }
 
-/* CAROUSEL */
+/* HOME-CAROUSEL */
 /* a.carousel-control-next span{
     background-color: #fff !important;
     border-radius: 50%;
     color:#000 !important;
 } */
+.carousel-item img{
+    border-radius: 10px;
+}
+
+/* HOME-PROJECTS */
+.section-projects{
+    margin-top:60px !important;
+}
+.section-projects p {
+    opacity: .7;
+}
+.section-projects .btn{
+    border: none;
+    background-color: #FFA12D;
+    color:#FFFFFF;
+    transition: .3s;
+}
+.section-projects .left-project .btn{
+    margin-top:20px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section-projects .right-project h5{
+    letter-spacing: 4px;
+    color:#F23029;
+    opacity: .7;
+    font-weight: 600;
+}
+.section-projects .right-project .btn{
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+.section-projects .btn:hover{
+    background-color: #ff8c00;
+}
+.section-projects .left-project .btn:hover{
+    background-color: #ff8c00;
+    font-weight: bold;
+}
+.section-projects .card{
+    border-color: rgba(0, 0, 0, 0) !important;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, .05); */
+}
+.section-projects .achievements .achive{
+    width: 100%;
+    height: 112px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, .025);
+}
+.section-projects .achievements .achive .icon{
+    margin-top: 24px;
+    margin-left: 24px;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-color:#FFA12D;
+    border-radius: 8px;
+    float: left;
+}
+.section-projects .achievements .achive .icon i{
+    position: absolute;
+    top:18px;
+    left: 18px;
+    font-size:32px;
+    margin: 0 auto !important;
+    color:#FFFFFF !important;
+}
+.section-projects .achievements .achive h2{
+    margin-top: 24px;
+    margin-left: 20px;
+    float:left;
+    line-height: 64px;
+    color:#FFA12D;
+}
+.section-projects .achievements .achive-1{
+    margin-top: 80px;
+}
+.section-projects .achievements .achive:hover{
+    background-color: #FFA12D;
+}
+.section-projects .achievements .achive:hover .icon{
+    background-color: #FFFFFF;
+}
+.section-projects .achievements .achive:hover i{
+    color: #FFA12D !important;
+}
+.section-projects .achievements .achive:hover h2{
+    color: #FFFFFF;
+}

@@ -71,3 +71,73 @@
     <span class="sr-only"></span>
   </a>
 </div>
+
+<!-- projects -->
+<div class="container section-projects">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 left-project">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="card-body">
+            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
+            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="card-body">
+            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
+            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+        <div class="card" style="width: 18rem;">
+          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="card-body">
+            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
+            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+        <div class="card" style="width: 18rem;">
+          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="card-body">
+            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
+            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-1 right-project">
+      <h5>PROYEK</h5>
+      <h1>Puluhan Proyek Perlu Bantuanmu</h1>
+      <p>Mari bantu peternak lokal mengembangkan usahanya, dan ambil keuntungannya.</p>
+      <a href="#" class="btn">Lihat lebih banyak</a>
+      <div class="achievements">
+        <div class="achive achive-1">
+          <div class="icon"><i class="fa fa-check-square-o" style="font-size:32px"></i></div>
+          <h2>50+<span style="font-size: 16px; vertical-align: middle">&nbsp;&nbsp; Total proyek</span></h2>
+        </div>
+        <div class="achive achive-2">
+          <div class="icon"><i class="fa fa-area-chart" style="font-size:32px"></i></div>
+          <h2>50jt+<span style="font-size: 16px; vertical-align: middle">&nbsp;&nbsp; Investasi Terkelola</span></h2>
+        </div>
+        <div class="achive achive-3">
+          <div class="icon"><i class="fa fa-users" style="font-size:28px;"></i></div>
+          <h2>100+<span style="font-size: 16px; vertical-align: middle">&nbsp;&nbsp; Mitra Terdaftar</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
