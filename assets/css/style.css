@@ -19,6 +19,10 @@ h2{
     font-size: 32px;
     font-weight: 600;
 }
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
 body{
     background-color: #F7F7F7;
 }
@@ -153,4 +157,74 @@ li.nav-item{
 }
 .section-projects .achievements .achive:hover h2{
     color: #FFFFFF;
+}
+
+/* Tentang dan Keunggulan Kami */
+#tentang-dan-keunggulan{
+    margin-top:140px !important;
+    background-color: #FFA12D;
+    padding:120px 0;
+}
+
+/* Tentang Kami */
+.tentang-kami h5, .keunggulan-kami h5{
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.tentang-kami h1, .keunggulan-kami h1{
+    margin: 20px 0;
+}
+.tentang-kami .tentang-left-side{
+    display: table;
+}
+.tentang-left-side .texts{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 80px;
+}
+.tentang-left-side .texts p{
+    opacity: .7;
+}
+
+/* Keunggulan Kami */
+.keunggulan-first-side{
+    width: 45%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.keunggulan-second-side{
+    margin-top: 48px;
+}
+.keunggulan-second-side .col-lg-4 .keunggulan-point{
+    background-color: rgba(255, 255, 255, .15);
+    border-radius: 16px;
+    padding: 32px;
+}
+.keunggulan-second-side .col-lg-4 .keunggulan-point:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .25s;
+}
+.keunggulan-second-side .col-lg-4 .keunggulan-point:hover i, .keunggulan-second-side .col-lg-4 .keunggulan-point:hover h3{
+    color:#FFA12D;
+    transition: .25s;
+}
+.keunggulan-second-side .col-lg-4 .keunggulan-point:hover p{
+    color:#000000;
+    opacity: .7;
+    transition: .25s;
+}
+.keunggulan-second-side .col-lg-4 i{
+    font-size: 52px;
+}
+.keunggulan-second-side .col-lg-4 h3{
+    margin-top:32px;
+    margin-bottom: 12px;
+}
+.keunggulan-second-side .col-lg-4 p{
+    opacity: .7;
+    line-height: 25px;
+}
+.keunggulan-second-side .col-lg-4 i, .keunggulan-second-side .col-lg-4 h3, .keunggulan-second-side .col-lg-4 p{
+    color:#FFFFFF;
 }
