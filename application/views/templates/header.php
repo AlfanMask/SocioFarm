@@ -15,4 +15,4 @@
 
     <title>Hello, world!</title>
   </head>
-  <body style="padding-bottom:800px">
+  <body>

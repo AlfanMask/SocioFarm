@@ -59,6 +59,15 @@ li.nav-item{
     color:#FFFFFF;
     border-radius: 5px;
 }
+.nav-right a.link-login:hover{
+    color: #ff8c00;
+    font-weight: bold;
+}
+.nav-right a.link-register:hover{
+    background-color: #ff8c00 !important;
+    transform: scale(1.1);
+    transition: .25s;
+}
 
 /* HOME-CAROUSEL */
 /* a.carousel-control-next span{
@@ -101,10 +110,15 @@ li.nav-item{
 }
 .section-projects .btn:hover{
     background-color: #ff8c00;
+    transition: .25s;
 }
 .section-projects .left-project .btn:hover{
     background-color: #ff8c00;
-    font-weight: bold;
+    transform: scale(1.05);
+    transition: .25s;
+}
+.section-projects .right-project .btn:hover{
+    transform: scale(1.1);
 }
 .section-projects .card{
     border-color: rgba(0, 0, 0, 0) !important;
@@ -148,15 +162,19 @@ li.nav-item{
 }
 .section-projects .achievements .achive:hover{
     background-color: #FFA12D;
+    transition: .25s;
 }
 .section-projects .achievements .achive:hover .icon{
     background-color: #FFFFFF;
+    transition: .25s;
 }
 .section-projects .achievements .achive:hover i{
     color: #FFA12D !important;
+    transition: .25s;
 }
 .section-projects .achievements .achive:hover h2{
     color: #FFFFFF;
+    transition: .25s;
 }
 
 /* Tentang dan Keunggulan Kami */
@@ -211,7 +229,7 @@ li.nav-item{
 }
 .keunggulan-second-side .col-lg-4 .keunggulan-point:hover p{
     color:#000000;
-    opacity: .7;
+    opacity: .5;
     transition: .25s;
 }
 .keunggulan-second-side .col-lg-4 i{
@@ -227,4 +245,85 @@ li.nav-item{
 }
 .keunggulan-second-side .col-lg-4 i, .keunggulan-second-side .col-lg-4 h3, .keunggulan-second-side .col-lg-4 p{
     color:#FFFFFF;
+}
+
+/* Socio Form */
+.socio-form{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+.socio-form p{
+    margin-top: 24px;
+    line-height: 28px;
+    opacity: .7;
+}
+.socio-form form{
+    background-color: #FFFFFF;
+    padding:32px;
+    border-radius:8px;
+}
+.socio-form form label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.socio-form form input, .socio-form form textarea{
+    border: none;
+    background-color: #F7F7F7;
+}
+.socio-form form input::placeholder, .socio-form form textarea::placeholder{
+    font-family: 'DM Sans', sans-serif;
+    opacity: .3;
+    font-weight: 400;
+}
+.socio-form form input:focus, .socio-form form textarea:focus{
+    border-color: #FFA12D !important;
+    transition: .25s;
+}
+.socio-form form input{
+    height: 48px;
+}
+.socio-form button{
+    border:none;
+    background-color: #FFA12D;
+    margin-top: 16px;
+    padding: 12px 32px;
+}
+.socio-form button:hover{
+    background-color: #ff8c00;
+    transition: .25s;
+}
+
+/* FOOTER */
+footer{
+    background-color: #000000;
+    padding: 64px 0;
+}
+footer p{
+    color:#FFFFFF;
+    opacity: .7;
+    font-weight: 400;
+    line-height: 28px;
+}
+footer h3{
+    margin-bottom:16px;
+    color:#FFFFFF;
+}
+footer ul, footer li{
+    margin:0;
+    padding:0;
+}
+footer ul li{
+    list-style-type: none;
+    margin-bottom:8px;
+}
+footer ul li a{
+    color:#FFFFFF;
+    opacity: .7;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color:#FFA12D;
 }

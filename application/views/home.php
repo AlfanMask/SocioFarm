@@ -23,9 +23,8 @@
             Mitra
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+            <li><a class="dropdown-item" href="#">Daftar Mitra</a></li>
+            <li><a class="dropdown-item" href="#">Cara Menjadi Mitra</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -193,3 +192,76 @@
   </div>
 </div>
 </div>
+
+<!-- form -->
+<div class="container socio-form">
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      <h1>Ingin Memulai Usaha dengan Kami?</h1>
+      <p>Mari terhubung & bekerjasama dengan kami untuk mewujudkan acara ataupun proyek usaha sektor pertanian, peternakan dan pangan. </p>
+    </div>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <form class="row g-3">
+        <div class="col-12" style="margin-top:-12px;">
+          <label for="inputName" class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Nama Lengkap">
+        </div>
+        <div class="col-12">
+          <label for="inputEmail" class="form-label">Alamat Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Alamat Email">
+        </div>
+        <div class="form-group">
+          <label for="inputMsg">Isi Pesan</label>
+          <textarea class="form-control" id="inputMsg" rows="4" placeholder="Isi Pesan"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+<div class="container">
+  <div class="row">
+    
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      <img class="mb-4" src="<?= base_url('assets/img/logo-footer-sociofarm.png') ?>" alt="">
+      <p>Mari terhubung & bekerjasama dengan kami untuk mewujudkan acara ataupun proyek usaha sektor pertanian, peternakan dan pangan. </p>
+    </div>
+
+    <div class="col-lg-1 col-md-1 col-sm-12"></div>
+    
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Layanan</h3>
+      <ul>
+        <li><a href="#">Pelatihan</a></li>
+        <li><a href="#">Proyek Usaha</a></li>
+        <li><a href="#">SCR</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Media</h3>
+        <ul>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Privasi</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Sosial Media</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+</footer>
