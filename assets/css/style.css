@@ -293,6 +293,7 @@ li.nav-item{
 }
 .socio-form button:hover{
     background-color: #ff8c00;
+    transform: scale(1.1);
     transition: .25s;
 }
 
@@ -326,4 +327,95 @@ footer ul li a{
 }
 footer ul li a:hover{
     color:#FFA12D;
+}
+
+
+/* MEDIA QUERY */
+/* mobile */
+@media only screen and (max-width: 480px){
+h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+body{
+    background-color: #F7F7F7;
+}
+h5{
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+/* NAVBAR */
+.nav-right li{
+    float:left !important;
+}
+#carouselHome{
+    margin-top:20px;
+}
+.col-centered{
+    float:none !important;
+    margin: 0 auto !important;
+}
+.card{
+    margin:auto;
+}
+.card-2{
+    margin-top:40px !important;
+}
+.right-project, .tentang-left-side, .socio-form{
+    margin:auto !important;
+    text-align: center;
+}
+.right-project{
+    margin-top:40px !important;
+}
+.right-project .achievements{
+    margin-top:-40px !important;
+}
+#tentang-dan-keunggulan{
+    margin-top: 80px !important;
+    padding: 40px 0;
+}
+.tentang-left-side .texts{
+    padding-right: 0;
+}
+.keunggulan-first-side{
+    width:100%;
+    margin-top: 80px;
+}
+.keunggulan-first-side-br{
+    display: none;
+}
+.keunggulan-second-side{
+    margin-top:20px;
+}
+.keunggulan-point{
+    margin-top:20px;
+}
+.socio-form{
+    margin-top:40px !important;
+}
+.socio-form form{
+    margin: 20px 10px 40px 10px;
+}
+footer{
+    padding: 40px 0;
+}
+footer .col-sm-12 h3{
+    margin-top: 20px;
+}
+}
+
+/* tablet */
+@media only screen and (min-width:481px) and (max-width:768px){
+
 }

@@ -75,7 +75,7 @@
 <div class="container section-projects">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 left-project">
-      <div class="row">
+      <div class="row col-centered">
         <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card" style="width: 18rem;">
           <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
@@ -87,7 +87,7 @@
         </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
+        <div class="card card-2" style="width: 18rem;">
           <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
           <div class="card-body">
             <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
@@ -160,7 +160,7 @@
     <div class="keunggulan-kami">
       <div class="keunggulan-first-side">  
         <h5 class="text-center">KEUNGGULAN KAMI</h5>
-        <h1 class="text-white text-center">Kenapa Kamu <br>Harus Pilih SocioInvest</h1>
+        <h1 class="text-white text-center">Kenapa Kamu <br class="keunggulan-first-side-br">Harus Pilih SocioInvest</h1>
         <p class="text-white text-center" style="opacity: .7">Berikut ini merupakan keunggulan yang akan kamu dapatkan jika bermitra dengan Sociofarm Indonesia</p>
       </div>
       <div class="keunggulan-second-side">
