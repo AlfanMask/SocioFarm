@@ -532,6 +532,15 @@ p{
 .socio-form form{
     margin: 20px 10px 40px 10px;
 }
+.rekam-jejak .achievements{
+    margin-top:20px;
+}
+.rekam-jejak .achievements .achive{
+    text-align: center;
+}
+.rekam-jejak .achievements .achive .icon {
+    display: none;
+}
 footer{
     padding: 40px 0;
 }
