@@ -177,14 +177,14 @@ li.nav-item{
     transition: .25s;
 }
 
-/* Tentang dan Keunggulan Kami */
+/* HOME-Tentang dan Keunggulan Kami */
 #tentang-dan-keunggulan{
     margin-top:140px !important;
     background-color: #FFA12D;
     padding:120px 0;
 }
 
-/* Tentang Kami */
+/* HOME-Tentang Kami */
 .tentang-kami h5, .keunggulan-kami h5{
     letter-spacing: 5px;
     font-weight: 600;
@@ -204,7 +204,7 @@ li.nav-item{
     opacity: .7;
 }
 
-/* Keunggulan Kami */
+/* HOME-Keunggulan Kami */
 .keunggulan-first-side{
     width: 45%;
     margin-top: 120px;
@@ -247,7 +247,7 @@ li.nav-item{
     color:#FFFFFF;
 }
 
-/* Socio Form */
+/* HOME-Socio Form */
 .socio-form{
     margin-top:80px;
     margin-bottom:80px;
@@ -330,6 +330,131 @@ footer ul li a:hover{
 }
 
 
+/* PORTFOLIOS-Portfolio Header  */
+.portfolio-header{
+    margin-top:40px;
+}
+.portfolio-header h5{
+    letter-spacing: 5px;
+    font-weight: 600;
+    color:#FFA12D;
+}
+.portfolio-header h1{
+    color:#000000 !important;
+}
+.portfolio-text-left{
+    display: table;
+}
+.portfolio-text-left .texts{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 80px;
+}
+.portfolio-header p{
+    color:#000000 !important;
+    opacity: .7;
+}
+
+/* PORTFOLIOS-Portfolios */
+.section-portfolios{
+    margin-top:60px !important;
+}
+.section-portfolios img{
+    object-fit:cover;
+}
+.section-portfolios h5{
+    font-size: 24px;
+}
+.section-portfolios p {
+    opacity: .7;
+}
+.section-portfolios .card{
+    border:none;
+}
+p.portfolio-title{
+    width: 75%;
+    margin: -80px 0 40px 0;
+    color:#FFFFFF;
+}
+.section-portfolios .btn{
+    width: 200px;
+    padding: 10px 32px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #FFA12D;
+    color: #fff;
+}
+.section-portfolios .btn:hover{
+    background-color: #ff8c00 !important;
+    transform: scale(1.1);
+    transition: .25s;
+}
+
+/* PORTFOLIOS-Rekam Jejak */
+.rekam-jejak{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.rekam-jejak .achievements{
+    margin-top:40px;
+}
+.rekam-jejak .achievements .achive{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 32px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, .025);
+}
+.rekam-jejak .achievements .achive .icon{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color:#FFA12D;
+    border-radius: 8px;
+    /* float: left; */
+}
+.rekam-jejak .achievements .achive .icon i{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    font-size:24px;
+    margin: 0 auto !important;
+    color:#FFFFFF !important;
+}
+.rekam-jejak .achievements .achive h2{
+    /* float:left; */
+    /* line-height: 64px; */
+    margin: 24px 0 16px 0;
+    font-weight: 700;
+    font-size: 24px;
+    color:#000000;
+}
+.rekam-jejak .achievements p{
+    color:#000000;
+    opacity: .7;
+}
+.rekam-jejak .achievements .achive:hover{
+    background-color: #FFA12D;
+    transition: .25s;
+}
+.rekam-jejak .achievements .achive:hover .icon{
+    background-color: #FFFFFF;
+    transition: .25s;
+}
+.rekam-jejak .achievements .achive:hover i{
+    color: #FFA12D !important;
+    transition: .25s;
+}
+.rekam-jejak .achievements .achive:hover h2{
+    color: #FFFFFF;
+    transition: .25s;
+}
+.rekam-jejak .achievements .achive:hover p{
+    color: #FFFFFF !important;
+    transition: .25s;
+}
+
 /* MEDIA QUERY */
 /* mobile */
 @media only screen and (max-width: 480px){
@@ -361,7 +486,7 @@ p{
 #carouselHome{
     margin-top:20px;
 }
-.col-centered{
+.section-projects .col-centered{
     float:none !important;
     margin: 0 auto !important;
 }

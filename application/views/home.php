@@ -1,48 +1,3 @@
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="<?= base_url('assets/img/logo-sociofarm.png') ?>" alt="" height="24">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Proyek</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Keunggulan</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mitra
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Daftar Mitra</a></li>
-            <li><a class="dropdown-item" href="#">Cara Menjadi Mitra</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kontak</a>
-        </li>
-      </ul>
-      <ul class="nav-right">
-        <li class="nav-item">
-            <a class="nav-link link-register" href="#">Daftar</a>
-        </li>
-        <li class="nav-item" style="float: right;">
-            <a class="nav-link link-login" href="#">Masuk</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <!-- carousel -->
 <div id="carouselHome" class="container carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -181,7 +136,7 @@
           </div>
           <div class="col-lg-4 col-md-4 col-ms-12">
           <div class="keunggulan-point">    
-          <i class="fa  fa-bar-chart-o"></i>
+          <i class="fa fa-bar-chart-o"></i>
             <h3>Keuntungan</h3>
             <p>Pengelolaan tepat dan pertumbuhan usaha pertanian dan peternakan  menghasilkan keuntungan yang stabil.</p>
           </div>
@@ -222,46 +177,3 @@
     </div>
   </div>
 </div>
-
-<!-- footer -->
-<footer>
-<div class="container">
-  <div class="row">
-    
-    <div class="col-lg-5 col-md-5 col-sm-12">
-      <img class="mb-4" src="<?= base_url('assets/img/logo-footer-sociofarm.png') ?>" alt="">
-      <p>Mari terhubung & bekerjasama dengan kami untuk mewujudkan acara ataupun proyek usaha sektor pertanian, peternakan dan pangan. </p>
-    </div>
-
-    <div class="col-lg-1 col-md-1 col-sm-12"></div>
-    
-    <div class="col-lg-2 col-md-2 col-sm-12">
-      <h3>Layanan</h3>
-      <ul>
-        <li><a href="#">Pelatihan</a></li>
-        <li><a href="#">Proyek Usaha</a></li>
-        <li><a href="#">SCR</a></li>
-      </ul>
-    </div>
-
-    <div class="col-lg-2 col-md-2 col-sm-12">
-      <h3>Media</h3>
-        <ul>
-          <li><a href="#">Tentang</a></li>
-          <li><a href="#">Privasi</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-    </div>
-
-    <div class="col-lg-2 col-md-2 col-sm-12">
-      <h3>Sosial Media</h3>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-    </div>
-
-  </div>
-</div>
-</footer>

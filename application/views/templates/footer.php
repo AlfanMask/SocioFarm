@@ -1,3 +1,46 @@
+    <!-- footer -->
+<footer>
+<div class="container">
+  <div class="row">
+    
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      <img class="mb-4" src="<?= base_url('assets/img/logo-footer-sociofarm.png') ?>" alt="">
+      <p>Mari terhubung & bekerjasama dengan kami untuk mewujudkan acara ataupun proyek usaha sektor pertanian, peternakan dan pangan. </p>
+    </div>
+
+    <div class="col-lg-1 col-md-1 col-sm-12"></div>
+    
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Layanan</h3>
+      <ul>
+        <li><a href="#">Pelatihan</a></li>
+        <li><a href="#">Proyek Usaha</a></li>
+        <li><a href="#">SCR</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Media</h3>
+        <ul>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Privasi</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-12">
+      <h3>Sosial Media</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+</footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
