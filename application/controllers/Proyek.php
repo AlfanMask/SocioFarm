@@ -1,7 +1,6 @@
 <?php
 
-class Portfolios extends CI_CONTROLLER{
-
+class Proyek extends CI_CONTROLLER{
     public function __construct(){
         parent::__construct();
 
@@ -11,12 +10,12 @@ class Portfolios extends CI_CONTROLLER{
 
     public function index(){
         // 0:proyek, 1:portfolio, 2:keunggulan, 3:mitra, 4:kontak
-        $data['navFocus'] = ['','active','','',''];
+        $data['navFocus'] = ['active','','','',''];
 
         $this->load->view('templates/header', $data);
-        $this->load->view('portfolios');
+        $this->load->view('proyek');
         $this->load->view('templates/footer');
-    }
 
+    }
 
 }

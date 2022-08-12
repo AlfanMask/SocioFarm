@@ -29,13 +29,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Proyek</a>
+          <a class="nav-link <?= $navFocus[0] ?>" aria-current="page" href="<?= base_url('proyek') ?>">Proyek</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('portfolios') ?>">Portfolio</a>
+          <a class="nav-link <?= $navFocus[1] ?>" href="<?= base_url('portfolios') ?>">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Keunggulan</a>
+          <a class="nav-link <?= $navFocus[2] ?>" href="<?= base_url('keunggulan') ?>">Keunggulan</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,7 +47,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontak</a>
+          <a class="nav-link <?= $navFocus[4] ?>" href="<?= base_url('kontak') ?>">Kontak</a>
         </li>
       </ul>
       <ul class="nav-right">
