@@ -51,10 +51,10 @@
         </li>
       </ul>
       <ul class="nav-right">
-        <li class="nav-item">
+        <li class="nav-item nav-item-register">
             <a class="nav-link link-register" href="#">Daftar</a>
         </li>
-        <li class="nav-item" style="float: right;">
+        <li class="nav-item nav-item-login" style="float: right;">
             <a class="nav-link link-login" href="#">Masuk</a>
         </li>
       </ul>

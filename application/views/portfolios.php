@@ -22,8 +22,9 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -32,8 +33,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -42,8 +44,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -52,8 +55,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -62,8 +66,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -72,8 +77,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -82,8 +88,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -92,8 +99,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
@@ -102,8 +110,9 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
-      <img src="<?= base_url('assets/img/bg-portfolio-card.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
       <div class="card-body">
+        <div class="fa-roi"><p>Total ROI 17%</p></div>
         <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
         <p class="card-text">Terkumpul</p>
         <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>

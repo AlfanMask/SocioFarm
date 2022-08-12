@@ -5,7 +5,7 @@
     <li data-target="#carouselHome" data-slide-to="1"></li>
     <li data-target="#carouselHome" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <img src="<?= base_url('assets/img/slide1.png') ?>" class="d-block w-100" alt="...">
     </div>
@@ -33,8 +33,9 @@
       <div class="row col-centered">
         <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card" style="width: 18rem;">
-          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
           <div class="card-body">
+            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
             <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
             <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
             <a href="#" class="btn btn-primary">Lihat Proyek</a>
@@ -43,8 +44,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card card-2" style="width: 18rem;">
-          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
           <div class="card-body">
+            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
             <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
             <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
             <a href="#" class="btn btn-primary">Lihat Proyek</a>
@@ -53,8 +55,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
         <div class="card" style="width: 18rem;">
-          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
           <div class="card-body">
+            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
             <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
             <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
             <a href="#" class="btn btn-primary">Lihat Proyek</a>
@@ -63,8 +66,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
         <div class="card" style="width: 18rem;">
-          <img src="<?= base_url('assets/img/slide1.png') ?>" class="card-img-top" alt="..." style="height: 240px">
+          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
           <div class="card-body">
+            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
             <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
             <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
             <a href="#" class="btn btn-primary">Lihat Proyek</a>

@@ -25,6 +25,7 @@
           <li><a href="#">Tentang</a></li>
           <li><a href="#">Privasi</a></li>
           <li><a href="#">Blog</a></li>
+          <li><a href="<?= base_url('kontak') ?>">Kontak</a></li>
         </ul>
     </div>
 
@@ -38,6 +39,15 @@
     </div>
 
   </div>
+  
+  <p style="margin-top:24px;margin-bottom:8px"><i class="fa fa-envelope" style="font-size:16px"></i>&nbsp;&nbsp;&nbsp;@sociofarm.id</p>
+  <p style="margin-bottom:8px"><i class="fa fa-phone" style="font-size:16px"></i>&nbsp;&nbsp;&nbsp;+62 858-8032-4342</p>
+  <p style="margin-bottom:8px"><i class="fa fa-map-marker" style="font-size:16px"></i>&nbsp;&nbsp;&nbsp;Jaten, Karanganyar 57731, Indonesia</p>
+
+  <hr style="color:#FFFFFF;margin-top:24px">
+
+  <div class="copyright"><p>Copyright &copy; 2022 Sociofarm. All Rights Reserved.</p></div>
+
 </div>
 </footer>
     
