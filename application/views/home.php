@@ -29,7 +29,7 @@
 <!-- projects -->
 <div class="container section-projects">
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 left-project">
+    <div class="col-lg-6 col-md-12 col-sm-12 left-project">
       <div class="row col-centered">
         <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card" style="width: 18rem;">
@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-1 right-project">
+    <div class="col-lg-6 col-md-12 col-sm-1 right-project">
       <h5>PROYEK</h5>
       <h1>Puluhan Proyek Perlu Bantuanmu</h1>
       <p>Mari bantu peternak lokal mengembangkan usahanya, dan ambil keuntungannya.</p>
@@ -124,21 +124,21 @@
       </div>
       <div class="keunggulan-second-side">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-ms-12">
-            <div class="keunggulan-point">  
+          <div class="col-lg-4 col-md-12 col-ms-12">
+            <div class="keunggulan-point" style="margin-top:0px !important">  
               <i class="fa fa-suitcase"></i>
               <h3>Memberdayakan</h3>
               <p>Proyek usaha sektor pertanian, peternakan dan pangan selalu berorientasi untuk memberdayakan peternak petani lokal.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-ms-12">
+          <div class="col-lg-4 col-md-12 col-ms-12">
           <div class="keunggulan-point">    
           <i class="fa fa-shield"></i>
             <h3>Terpercaya</h3>
             <p>Proses bermitra yang mudah serta dana usaha ataupun investasi di kelola secara transparan oleh mitra yang terpercaya.</p>
           </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-ms-12">
+          <div class="col-lg-4 col-md-12 col-ms-12">
           <div class="keunggulan-point">    
           <i class="fa fa-bar-chart-o"></i>
             <h3>Keuntungan</h3>
@@ -155,11 +155,11 @@
 <!-- form -->
 <div class="container socio-form">
   <div class="row">
-    <div class="col-lg-5 col-md-5 col-sm-12">
+    <div class="col-lg-5 col-md-6 col-sm-12">
       <h1>Ingin Memulai Usaha dengan Kami?</h1>
       <p>Mari terhubung & bekerjasama dengan kami untuk mewujudkan acara ataupun proyek usaha sektor pertanian, peternakan dan pangan. </p>
     </div>
-    <div class="col-lg-1 col-md-1"></div>
+    <div class="form-gap col-lg-1"></div>
     <div class="col-lg-6 col-md-6 col-sm-12">
       <form class="row g-3">
         <div class="col-12" style="margin-top:-12px;">
