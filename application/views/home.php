@@ -31,50 +31,23 @@
   <div class="row">
     <div class="col-lg-6 col-md-12 col-sm-12 left-project">
       <div class="row col-centered">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-          <div class="card-body">
-            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
-            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
-            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+        
+        <?php foreach($homeProjects as $hp): ?>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card" style="width: 18rem;">
+              <div class="img-card-home-project"><img src="<?= base_url('assets/img/').$hp['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
+              <div class="card-body">
+                <div class="fa-roi">
+                  <p>ROI <?= $hp['roi_bot'] ?>% - <?= $hp['roi_top'] ?>%</p>
+                </div>
+                <p class="card-text"><?= $hp['name'] ?></p>
+                <h5 class="card-title" style="font-weight:bold;">Rp <?= number_format($hp['price'],0,',','.') ?></h5>
+                <a href="<?= $hp['project_url'] ?>" class="btn btn-primary">Lihat Proyek</a>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card card-2" style="width: 18rem;">
-          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-          <div class="card-body">
-            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
-            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
-            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-            <a href="#" class="btn btn-primary">Lihat Proyek</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
-        <div class="card" style="width: 18rem;">
-          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-          <div class="card-body">
-            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
-            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
-            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-            <a href="#" class="btn btn-primary">Lihat Proyek</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
-        <div class="card" style="width: 18rem;">
-          <div class="img-card-home-project"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-          <div class="card-body">
-            <div class="fa-roi"><p>ROI 8% - 10%</p></div>
-            <p class="card-text">Proyek Kambin Ternak Bpk. Zainudin - Part 2</p>
-            <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-            <a href="#" class="btn btn-primary">Lihat Proyek</a>
-          </div>
-        </div>
-        </div>
+        <?php endforeach; ?>
+
       </div>
     </div>
     <div class="col-lg-6 col-md-12 col-sm-1 right-project">
@@ -102,54 +75,54 @@
 
 <!-- tentang dan keunggulan kami -->
 <div id="tentang-dan-keunggulan">
-<div class="container">
-  <div class="tentang-kami">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 tentang-left-side">
-        <div class="texts">
-          <h5>TENTANG KAMI</h5>
-          <h1 class="text-white">Karena Tak Kenal Maka Tak Sayang</h1>
-          <p class="text-white">Sociofarm memiliki 2 program layanan, berikut ini adalah layanan yang di kelola dan memiliki kepercayaan di masyarakat</p>
+  <div class="container">
+    <div class="tentang-kami">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 tentang-left-side">
+          <div class="texts">
+            <h5>TENTANG KAMI</h5>
+            <h1 class="text-white">Karena Tak Kenal Maka Tak Sayang</h1>
+            <p class="text-white">Sociofarm memiliki 2 program layanan, berikut ini adalah layanan yang di kelola dan memiliki kepercayaan di masyarakat</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img class="img-tentang-kami" src="<?= base_url('assets/img/img-tentang-kami.png') ?>" alt="" style="width:100%;border-radius: 40px;">
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <img class="img-tentang-kami" src="<?= base_url('assets/img/img-tentang-kami.png') ?>" alt="" style="width:100%;border-radius: 40px;">
-      </div>
-    </div>
-    <div class="keunggulan-kami">
-      <div class="keunggulan-first-side">  
-        <h5 class="text-center">KEUNGGULAN KAMI</h5>
-        <h1 class="text-white text-center">Kenapa Kamu <br class="keunggulan-first-side-br">Harus Pilih SocioInvest</h1>
-        <p class="text-white text-center" style="opacity: .7">Berikut ini merupakan keunggulan yang akan kamu dapatkan jika bermitra dengan Sociofarm Indonesia</p>
-      </div>
-      <div class="keunggulan-second-side">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-ms-12">
-            <div class="keunggulan-point" style="margin-top:0px !important">  
-              <i class="fa fa-suitcase"></i>
-              <h3>Memberdayakan</h3>
-              <p>Proyek usaha sektor pertanian, peternakan dan pangan selalu berorientasi untuk memberdayakan peternak petani lokal.</p>
+      <div class="keunggulan-kami">
+        <div class="keunggulan-first-side">
+          <h5 class="text-center">KEUNGGULAN KAMI</h5>
+          <h1 class="text-white text-center">Kenapa Kamu <br class="keunggulan-first-side-br">Harus Pilih SocioInvest</h1>
+          <p class="text-white text-center" style="opacity: .7">Berikut ini merupakan keunggulan yang akan kamu dapatkan jika bermitra dengan Sociofarm Indonesia</p>
+        </div>
+        <div class="keunggulan-second-side">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-ms-12">
+              <div class="keunggulan-point" style="margin-top:0px !important">
+                <i class="fa fa-suitcase"></i>
+                <h3>Memberdayakan</h3>
+                <p>Proyek usaha sektor pertanian, peternakan dan pangan selalu berorientasi untuk memberdayakan peternak petani lokal.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-ms-12">
-          <div class="keunggulan-point">    
-          <i class="fa fa-shield"></i>
-            <h3>Terpercaya</h3>
-            <p>Proses bermitra yang mudah serta dana usaha ataupun investasi di kelola secara transparan oleh mitra yang terpercaya.</p>
-          </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-ms-12">
-          <div class="keunggulan-point">    
-          <i class="fa fa-bar-chart-o"></i>
-            <h3>Keuntungan</h3>
-            <p>Pengelolaan tepat dan pertumbuhan usaha pertanian dan peternakan  menghasilkan keuntungan yang stabil.</p>
-          </div>
+            <div class="col-lg-4 col-md-12 col-ms-12">
+              <div class="keunggulan-point">
+                <i class="fa fa-shield"></i>
+                <h3>Terpercaya</h3>
+                <p>Proses bermitra yang mudah serta dana usaha ataupun investasi di kelola secara transparan oleh mitra yang terpercaya.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-ms-12">
+              <div class="keunggulan-point">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3>Keuntungan</h3>
+                <p>Pengelolaan tepat dan pertumbuhan usaha pertanian dan peternakan menghasilkan keuntungan yang stabil.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <!-- form -->
