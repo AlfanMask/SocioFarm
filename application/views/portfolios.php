@@ -20,16 +20,22 @@
 <!-- PORTFOLIOS -->
 <div class="container section-portfolios">
   <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+
+    <!-- test go to single proyek -->
+    <a href="<?= base_url('singleproyek') ?>" class="" style="text-decoration: none; color:#000">
+      <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+      <div class="card">
+        <div class="img-card-portfolio"><img src="<?= base_url('assets/img/bg-portfolio-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
+        <div class="card-body">
+          <div class="fa-roi"><p>Total ROI 17%</p></div>
+          <p class="portfolio-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
+          <p class="card-text">Terkumpul</p>
+          <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+        </div>
       </div>
-    </div>
+    </a>
+    <!-- test go to single proyek -->
+
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
     <div class="card">
@@ -129,7 +135,7 @@
 <div class="container rekam-jejak portfolio-header">
   <div class="container">
     <div class="portfolio-text text-center">
-      <h5>REKAM JEJAK</h5>
+      <h5>PORTFOLIO</h5>
       <h1>Simak Hasil Nyata Kami</h1>
     </div>
   </div>

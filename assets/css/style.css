@@ -540,6 +540,89 @@ p.portfolio-title {
 	transition: 0.25s;
 }
 
+/* SINGLE PROYEK */
+.single-proyek{
+	width: 55%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.single-proyek h5{
+	letter-spacing: 5px;
+	font-weight: 600;
+	color: #ffa12d;
+}
+.single-gallery{
+	border:1px solid rgba(134, 106, 106, 0.25);
+	border-radius: 24px;
+	padding:32px;
+}
+.single-gallery .gallery-show{
+	min-height: 600px;
+	background-color: rgb(0,0,0,.15);
+	border-radius: 24px;
+}
+.single-gallery .pict-1, .single-gallery .pict-2, .single-gallery .pict-3, .single-gallery .pict-4{
+	border-radius: 16px;
+	height: 22%;
+	margin-bottom:12%; 
+	margin-left: 10px;
+	background-color: rgba(0,0,0,.15);
+}
+.gallery-select div:hover{
+	border: 6px solid rgba(0,0,0,.3);
+}
+.invest-area{
+	margin-top: 40px;
+	padding: 32px;
+	border:1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 24px;
+}
+.invest-area progress{
+	width: 100%;
+	height: 24px;
+	background-color:#EBEBEB;
+	border-radius: 8px !important;
+	margin-bottom: 20px;
+}
+progress::-webkit-progress-value {
+  background: #ffa12d;
+	border-radius: 8px;
+}
+progress::-webkit-progress-bar {
+  background: #ebebeb;
+}
+.invest-icon p{
+	display: inline;
+	margin-right:40px;
+}
+.invest-area .right-side a.btn{
+	width: 100%;
+	height: 50px;
+	line-height: 35px;
+}
+.invest-area .right-side a.btn-invest{
+	background-color: #ffa12d;
+	color:#ffffff;
+	border: none;
+}
+.invest-area .right-side a.btn-simulasi{
+	margin-top:10px;
+	background-color: rgba(0,0,0,0);
+	border:1px solid #ffa12d;
+	color:#ffa12d;
+}
+.invest-area .right-side a.btn-invest:hover{
+	background-color: #ff8c00;
+	transform: scale(1.05);
+	transition: 0.25s;
+}
+.invest-area .right-side a.btn-simulasi:hover{
+	background-color: #ffa12d;
+	color:#ffffff;
+	transition: 0.25s;
+}
+
+
 /* MEDIA QUERY */
 /* mobile */
 @media only screen and (max-width: 480px) {
