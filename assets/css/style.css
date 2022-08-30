@@ -543,7 +543,7 @@ p.portfolio-title {
 
 /* SINGLE PROYEK */
 .single-proyek{
-	width: 55%;
+	width: 65%;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -929,6 +929,16 @@ progress::-webkit-progress-bar {
     }
     .rekam-jejak {
 		margin-bottom: 40px;
+	}
+	.single-proyek{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.single-gallery .gallery-show{
+		min-height: 400px;
+	}
+	.proyek-desc-area .right-desc{
+		margin-top:20px;
 	}
 	footer{
 		margin-top:40px;
