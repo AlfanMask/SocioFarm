@@ -35,7 +35,7 @@
           <p><strong>1000</strong> lembar masih tersedia dari 10.000 lembat</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <p style="text-align:right">Pendanaan ditutup dalam: <strong>2 Minggu 3 hari 8 jam</strong></p>
+          <p class="text-pendanaan-ditutup" style="text-align:right">Pendanaan ditutup dalam: <strong>2 Minggu 3 hari 8 jam</strong></p>
         </div>
       </div>
       <progress id="" value="90" max="100"></progress>

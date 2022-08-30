@@ -562,7 +562,7 @@ p.portfolio-title {
 	background-color: rgb(0,0,0,.15);
 	border-radius: 24px;
 }
-.single-gallery .pict-1, .single-gallery .pict-2, .single-gallery .pict-3, .single-gallery .pict-4{
+.gallery-select .pict-1, .gallery-select .pict-2, .gallery-select .pict-3, .gallery-select .pict-4{
 	border-radius: 16px;
 	height: 22%;
 	margin-bottom:12%; 
@@ -709,22 +709,22 @@ progress::-webkit-progress-bar {
 /* mobile */
 @media only screen and (max-width: 480px) {
 	h1 {
-		font-size: 32px;
+		font-size: 32px !important;
 		font-weight: 700;
 	}
 	h2 {
-		font-size: 24px;
+		font-size: 24px !important;
 		font-weight: 600;
 	}
 	h3 {
-		font-size: 18px;
+		font-size: 18px !important;
 		font-weight: 700;
 	}
 	h5 {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	p {
-		font-size: 14px;
+		font-size: 14px !important;
 	}
 	/* NAVBAR */
 	.nav-right li {
@@ -803,6 +803,53 @@ progress::-webkit-progress-bar {
 	}
 	.rekam-jejak .achievements .achive .icon {
 		display: none;
+	}
+	.single-proyek{
+		width: 100%;
+		margin-bottom:10px;
+	}
+	.single-gallery{
+		border:none;
+	}
+	.single-gallery .gallery-show{
+		min-height: 300px;
+	}
+	.gallery-select div{
+		display: inline-block;
+	}
+	.gallery-select .pict-1, .gallery-select .pict-2, .gallery-select .pict-3, .gallery-select .pict-4{
+		margin-top:10px !important;
+		width: 22.5%;
+		height: 75px;
+		margin-bottom:0;
+		margin-left:2px;
+		margin-right:2px;
+	}
+	.invest-area{
+		margin-top:0px;
+		border:none;
+		padding:12px;
+	}
+	.invest-area .text-pendanaan-ditutup{
+		text-align: left !important;
+	}
+	.invest-area .invest-icon p{
+		display: inline-block;
+	}
+	.proyek-desc-area{
+		margin-top:20px;
+	}
+	.btn-desc a.btn{
+		padding: 12px 36px;
+	}
+	.btn-desc a.btn-video{
+		margin-left:0;
+		float: right;
+	}
+	.proyek-desc-area .right-desc{
+		margin-top:20px;
+		padding: 12px;
+		border:none;
 	}
 	footer {
 		margin-top:40px;
