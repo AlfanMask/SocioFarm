@@ -3,7 +3,8 @@
 COLOR
 Primary:#000000
 Secondary:#FFA12D
-Accent:#FFFFFF;
+Accent1:#FFFFFF;
+Accent2:#219C8B
 Accent-button: #219C8B
 */
 h1,
@@ -290,7 +291,6 @@ li.nav-item {
 /* HOME-Socio Form */
 .socio-form {
 	margin-top: 80px;
-	margin-bottom: 80px;
 }
 .socio-form p {
 	margin-top: 24px;
@@ -343,6 +343,7 @@ li.nav-item {
 /* FOOTER */
 footer {
 	background-color: #000000;
+	margin-top:80px;
 	padding: 64px 0 24px 0;
 }
 footer p {
@@ -653,6 +654,55 @@ progress::-webkit-progress-bar {
 	color:#ffffff;
 	transition: 0.25s;
 }
+.proyek-desc-area .right-desc{
+	border:1px solid rgba(0,0,0,0.15);
+	border-radius:16px;
+	padding:24px;
+}
+.right-desc .first-line{
+	margin-bottom:16px;
+}
+.right-desc h3{
+	margin: 24px 0 16px 0;
+}
+.right-desc .first-line h3{
+	display: contents;
+}
+.right-desc .first-line a{
+	color:#000000;
+	font-family: "DM Sans", sans-serif;
+	text-decoration:underline;
+	float: right;
+}
+.right-desc p{
+	opacity: .7;
+}
+.profil-mitra p{
+	display: inline-block;
+	margin-left:10px;
+}
+.profil-mitra a{
+	margin-top:5px;
+	color:#000000;
+	font-family:"DM Sans", sans-serif;
+	font-size:14px;
+	text-decoration:underline;
+	float: right;
+}
+.profil-mitra img{
+	width: 32px;
+	height:32px;
+	border-radius: 50%;
+}
+.right-desc p.status-proyek{
+	display:inline-block;
+	background-color: #219C8B;
+	padding: 6px 16px;
+	font-size: 14px;
+	color:#FFFFFF;
+	opacity: 1;
+	border-radius: 100px;
+}
 
 
 /* MEDIA QUERY */
@@ -755,6 +805,7 @@ progress::-webkit-progress-bar {
 		display: none;
 	}
 	footer {
+		margin-top:40px;
 		padding: 40px 0;
 	}
 	footer .col-sm-12 h3 {
@@ -820,8 +871,8 @@ progress::-webkit-progress-bar {
 	.socio-form button {
 		width: 100%;
 	}
-    .socio-form {
-        margin: 60px 0 40px 0;
+  .socio-form {
+        margin: 60px 0 0 0;
 	}
 	.portfolio-header .div-gap {
 		display: none;
@@ -831,5 +882,8 @@ progress::-webkit-progress-bar {
     }
     .rekam-jejak {
 		margin-bottom: 40px;
+	}
+	footer{
+		margin-top:40px;
 	}
 }

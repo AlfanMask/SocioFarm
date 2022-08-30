@@ -67,17 +67,22 @@
     </div>
 
     <div class="right-desc col-lg-4 col-md-4 col-sm-12">
-
+      <div class="first-line">
+        <h3>Lokasi</h3>
+        <a href="#">Lihat lokasi</a>
+      </div>
+      <p class="desc-lokasi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis pharetra nunc erat vitae morbi volutpat, diam, </p>
+      <h3>Peternak</h3>
+      <div class="profil-mitra">
+        <img src="<?= base_url('assets/img/') ?>bg-proyek-card.jpg" alt="">
+        <p class="nama-mitra">Bapak Zainudin</p>
+        <a href="#">Lihat profil</a>
+      </div>
+      <h3>Periode</h3>
+      <p class="periode-proyek">8 Agustus 2022 - 8 Mei 2023</p>
+      <h3>Status</h3>
+      <p class="status-proyek">Sedang Berlangsung</p>
     </div>
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-<div class="" style="height:600px;"></div>
