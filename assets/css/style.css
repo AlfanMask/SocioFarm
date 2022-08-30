@@ -379,36 +379,36 @@ footer .copyright p {
 	text-align: center;
 }
 
-/* PORTFOLIOS-Portfolio Header  */
-.portfolio-header {
+/* PROYEK-Proyek Header  */
+.proyek-header {
 	margin-top: 40px;
 }
-.portfolio-header h5 {
+.proyek-header h5 {
 	letter-spacing: 5px;
 	font-weight: 600;
 	color: #ffa12d;
 }
-.portfolio-header h1 {
+.proyek-header h1 {
 	color: #000000 !important;
 }
-.portfolio-text-left {
+.proyek-text-left {
 	display: table;
 }
-.portfolio-text-left .texts {
+.proyek-text-left .texts {
 	display: table-cell;
 	vertical-align: middle;
 	padding-right: 80px;
 }
-.portfolio-header p {
+.proyek-header p {
 	color: #000000 !important;
 	opacity: 0.7;
 }
 
-/* PORTFOLIOS-Portfolios */
-.section-portfolios {
+/* PROYEK-Proyek */
+.section-proyek {
 	margin-top: 60px !important;
 }
-.section-portfolios .fa-roi {
+.section-proyek .fa-roi {
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -421,16 +421,16 @@ footer .copyright p {
 	background-color: #219c8b;
 	padding: 6px 12px;
 }
-.section-portfolios .fa-roi p {
+.section-proyek .fa-roi p {
 	display: table-cell;
 	vertical-align: middle;
 	color: #ffffff;
 	opacity: 1 !important;
 }
-.section-portfolios .img-card-portfolio img {
+.section-proyek .img-card-portfolio img {
 	object-fit: cover;
 }
-.section-portfolios .img-card-portfolio::after {
+.section-proyek .img-card-portfolio::after {
 	content: "";
 	position: absolute;
 	z-index: 0;
@@ -444,13 +444,13 @@ footer .copyright p {
 		rgba(0, 0, 0, 0.5) 100%
 	);
 }
-.section-portfolios h5 {
+.section-proyek h5 {
 	font-size: 24px;
 }
-.section-portfolios p {
+.section-proyek p {
 	opacity: 0.7;
 }
-.section-portfolios .card {
+.section-proyek .card {
 	border: none;
 }
 p.portfolio-title {
@@ -461,7 +461,7 @@ p.portfolio-title {
 	z-index: 1 !important;
 	opacity: 1;
 }
-.section-portfolios .btn {
+.section-proyek .btn {
 	width: 200px;
 	padding: 10px 32px;
 	margin: auto;
@@ -469,7 +469,7 @@ p.portfolio-title {
 	background-color: #ffa12d;
 	color: #fff;
 }
-.section-portfolios .btn:hover {
+.section-proyek .btn:hover {
 	background-color: #ff8c00 !important;
 	transform: scale(1.1);
 	transition: 0.25s;
@@ -617,6 +617,38 @@ progress::-webkit-progress-bar {
 	transition: 0.25s;
 }
 .invest-area .right-side a.btn-simulasi:hover{
+	background-color: #ffa12d;
+	color:#ffffff;
+	transition: 0.25s;
+}
+.proyek-desc-area{
+	margin-top:40px;
+}
+.left-desc p{
+	margin-top: 16px;
+	margin-bottom:40px;
+	opacity: .7;
+}
+.btn-desc a.btn{
+	padding: 14px 46px;
+}
+.btn-desc a.btn-proposal{
+	background-color: #ffa12d;
+	color:#ffffff;
+	border: none;
+}
+.btn-desc a.btn-video{
+	margin-left:24px;
+	background-color: rgba(0,0,0,0);
+	border:1px solid #ffa12d;
+	color:#ffa12d;
+}
+.btn-desc a.btn-proposal:hover{
+	background-color: #ff8c00;
+	transform: scale(1.05);
+	transition: 0.25s;
+}
+.btn-desc a.btn-video:hover{
 	background-color: #ffa12d;
 	color:#ffffff;
 	transition: 0.25s;

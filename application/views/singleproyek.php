@@ -3,6 +3,7 @@
   <h1>Proyek Peternakan Kambing Jawa Bpk. Zainudin- Part 2</h1>
 </div>
 
+<!-- SINGLE PROYEK GALLERY -->
 <div class="single-gallery container">
   <div class="row">
     <div class="gallery-show col-lg-10 col-md-10 col-sm-12">
@@ -52,7 +53,25 @@
   </div>
 </div>
 
+<!-- SINGLEPROYEK DESCRIPTION -->
+<div class="container proyek-desc-area">
+  <div class="row">
+    
+    <div class="left-desc col-lg-8 col-md-8 col-sm-12">
+      <h3>Tentang Proyek</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis pharetra nunc erat vitae morbi volutpat, diam, pharetra, leo. Nisi sagittis ridiculus duis sapien. Id purus sapien aliquet vitae pretium cras purus. Facilisis mi arcu sit nibh lorem sit interdum. Sagittis pharetra, mauris tortor tellus nisl tristique euismod justo. Tortor neque diam pulvinar in ac quam pretium. Sit curabitur gravida ac blandit suscipit in pharetra, molestie feugiat. Nunc orci magna quam nec elementum egestas dolor.<br><br>Lacus, sed neque, nascetur donec quam nisi mattis. Ac pellentesque gravida at ipsum. Id amet nulla eget pulvinar morbi suspendisse tellus blandit. Amet tincidunt ac dictum lorem. Ultricies sit tincidunt ornare purus. Nulla mauris mollis nunc, varius. Aliquam orci imperdiet elit tincidunt sed ut aliquet libero.</p>
+      <div class="btn-desc">
+        <a href="#" class="btn btn-primary btn-proposal">Baca Proposal</a>
+        <a href="#" class="btn btn-primary btn-video">Lihat Video</a>
+      </div>
+    </div>
 
+    <div class="right-desc col-lg-4 col-md-4 col-sm-12">
+
+    </div>
+
+  </div>
+</div>
 
 
 

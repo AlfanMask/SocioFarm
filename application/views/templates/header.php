@@ -32,7 +32,7 @@
           <a class="nav-link <?= $navFocus[0] ?>" aria-current="page" href="<?= base_url('proyek') ?>">Proyek</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= $navFocus[1] ?>" href="<?= base_url('portfolios') ?>">Portfolio</a>
+          <a class="nav-link <?= $navFocus[1] ?>" href="<?= base_url('portfolio') ?>">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?= $navFocus[2] ?>" href="<?= base_url('keunggulan') ?>">Keunggulan</a>

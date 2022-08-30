@@ -1,6 +1,7 @@
 <?php
 
 class Proyek extends CI_CONTROLLER{
+
     public function __construct(){
         parent::__construct();
 
@@ -15,7 +16,7 @@ class Proyek extends CI_CONTROLLER{
         $this->load->view('templates/header', $data);
         $this->load->view('proyek');
         $this->load->view('templates/footer');
-
     }
+
 
 }
