@@ -559,17 +559,28 @@ p.portfolio-title {
 }
 .single-gallery .gallery-show{
 	min-height: 600px;
-	background-color: rgb(0,0,0,.15);
+	/* background-color: rgb(0,0,0,.15); */
+}
+.single-gallery .gallery-show img{
+	height: 600px;
+	width: 100%;
 	border-radius: 24px;
 }
 .gallery-select .pict-1, .gallery-select .pict-2, .gallery-select .pict-3, .gallery-select .pict-4{
-	border-radius: 16px;
 	height: 22%;
 	margin-bottom:12%; 
 	margin-left: 10px;
-	background-color: rgba(0,0,0,.15);
+	/* background-color: rgba(0,0,0,.15); */
 }
-.gallery-select div:hover{
+.gallery-select div img{
+	height: 100%;
+	width: 100%;
+	border-radius: 16px;
+}
+.gallery-select img.pict-active{
+	border: 6px solid rgba(0,0,0,.3);
+}
+.gallery-select div img:hover{
 	border: 6px solid rgba(0,0,0,.3);
 }
 .invest-area{

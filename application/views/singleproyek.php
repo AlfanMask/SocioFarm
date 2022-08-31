@@ -7,20 +7,20 @@
 <div class="single-gallery container">
   <div class="row">
     <div class="gallery-show col-lg-10 col-md-10 col-sm-12">
-      <img src="" alt="">
+      <img src="<?= base_url('assets/img/slide1.png')?>" class="gallery-show-pict" alt="">
     </div>
     <div class="gallery-select col-lg-2 col-md-2 col-sm-12">
-      <div class="pict-1">
-        <img src="" alt="">
+      <div onclick="changePict1()" class="pict-1">
+        <img src="<?= base_url('assets/img/slide1.png')?>" class="pict-active" alt="">
       </div>
-      <div class="pict-2">
-        <img src="" alt="">
+      <div onclick="changePict2()" class="pict-2">
+        <img src="<?= base_url('assets/img/slide2.png')?>" alt="">
       </div>
-      <div class="pict-3">
-        <img src="" alt="">
+      <div onclick="changePict3()" class="pict-3">
+        <img src="<?= base_url('assets/img/slide3.png')?>" alt="">
       </div>
-      <div class="pict-4">
-        <img src="" alt="">
+      <div onclick="changePict4()" class="pict-4">
+        <img src="<?= base_url('assets/img/slide4.png')?>" alt="">
       </div>
     </div>
   </div>
