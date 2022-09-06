@@ -52,10 +52,10 @@
       </ul>
       <ul class="nav-right">
         <li class="nav-item nav-item-register">
-            <a class="nav-link link-register" href="#">Daftar</a>
+            <a class="nav-link link-register" href="<?= base_url('daftar') ?>">Daftar</a>
         </li>
         <li class="nav-item nav-item-login" style="float: right;">
-            <a class="nav-link link-login" href="#">Masuk</a>
+            <a class="nav-link link-login" href="<?= base_url('masuk') ?>">Masuk</a>
         </li>
       </ul>
     </div>
