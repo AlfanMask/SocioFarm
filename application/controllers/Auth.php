@@ -54,6 +54,34 @@ class Auth extends CI_CONTROLLER{
     }
     
     var_dump($name,$email,$pass,$passconf,$address);
+  
+  }
+
+
+  public function masuk(){
+    $email = $_POST['inputEmail'];
+    $pass = $_POST['inputPassword'];
+
+    $this->load->model('MAuth');
+    $rowSelected = $this->MAuth->getMasuk($email);
+
+    var_dump($rowSelected);
+
+    $data['error_masuk'] = 'Email atau password salah!';
+    if(!empty($rowSelected)){
+      if(password_verify($pass,$rowSelected[0]['password'])){
+        echo 'Sukses Masuk!';
+      } else {
+        $this->load->view('masuk', $data);  
+      }
+
+    } else {
+      $this->load->view('masuk', $data);
+
+    }
+
+
+
   }
 
 
