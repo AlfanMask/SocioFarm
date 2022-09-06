@@ -18,10 +18,12 @@ class Auth extends CI_CONTROLLER{
     $passconf = $_POST['inputPasswordConf'];
     $address = $_POST['inputAddress'];
 
+    $hashed_pass = password_hash($pass,PASSWORD_DEFAULT);
+
     $data = [
       'id' => '',
       'name' => $name,
-      'password' => $pass,
+      'password' => $hashed_pass,
       'email' => $email,
       'address' => $address,
       'role' => 1,
