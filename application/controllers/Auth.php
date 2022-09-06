@@ -36,7 +36,7 @@ class Auth extends CI_CONTROLLER{
     ];
 
     $this->form_validation->set_rules('inputName','Nama','required');
-    $this->form_validation->set_rules('inputEmail','Email','required|valid_email');
+    $this->form_validation->set_rules('inputEmail','Email','required|valid_email|is_unique[tbl_users.email]');
     $this->form_validation->set_rules('inputPassword','Password','required');
     $this->form_validation->set_rules('inputPasswordConf','Password Confirmation','required|matches[inputPassword]');
     $this->form_validation->set_rules('inputAddress','Address','required');
