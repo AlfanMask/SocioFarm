@@ -32,7 +32,7 @@
       <div class="row">
 
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <p><strong>1000</strong> lembar masih tersedia dari 10.000 lembat</p>
+          <p><strong>1000</strong> lembar masih tersedia dari 10.000 lembar</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <p class="text-pendanaan-ditutup" style="text-align:right">Pendanaan ditutup dalam: <strong>2 Minggu 3 hari 8 jam</strong></p>
@@ -47,7 +47,7 @@
 
     <div class="right-side col-lg-3 col-md-3 col-sm-12">
       <a href="#" class="btn btn-primary btn-invest">Invest Sekarang</a>
-      <a href="#" class="btn btn-primary btn-simulasi">Simulasi</a>
+      <a href="<?= base_url('simulasi') ?>" class="btn btn-primary btn-simulasi">Simulasi</a>
     </div>
 
   </div>

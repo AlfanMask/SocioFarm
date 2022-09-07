@@ -109,3 +109,43 @@ function changePict4(){
   pict4.classList.add('pict-active');
 
 }
+
+
+// SIMULASI
+const harga = document.querySelector('#harga');
+const elm_lembar = document.querySelector('#lembar');
+const elm_modal = document.querySelector('#modal');
+const elm_roi = document.querySelector('#roi');
+const elm_profit = document.querySelector('#profit');
+const elm_pendapatan = document.querySelector('#pendapatan');
+
+// console.log('harga:' + harga.innerHTML.replace('.',''));
+
+
+function updateProfit(){
+  let modal = lembar.value*harga.innerHTML.replace('.','');
+  let profit = roi.value/100*modal;
+  let pendapatan = modal + profit;
+
+  modal = numberWithCommas(modal);
+  profit = numberWithCommas(profit);
+  pendapatan = numberWithCommas(pendapatan);
+
+  elm_modal.innerHTML = 'Rp. ' + modal;
+  elm_profit.innerHTML = 'Rp. ' + profit;
+  elm_pendapatan.innerHTML = 'Rp. ' + pendapatan;
+
+  console.log('lembar: ' + elm_lembar.value);
+  console.log('harga: ' + harga);
+  console.log('roi: ' + elm_roi.value);
+  console.log('modal: ' + modal);
+  console.log('profit: ' + profit);
+  console.log('pendapatan: ' + pendapatan);
+
+}
+
+function numberWithCommas(x) {
+  var parts = x.toString().split(".");
+  parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+  return parts.join(",");
+}
