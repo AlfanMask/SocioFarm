@@ -15,7 +15,7 @@ class Masuk extends CI_CONTROLLER{
     $data['error_masuk'] = '';
 
     $this->load->view('templates/header', $data);
-    $this->load->view('masuk');
+    $this->load->view('auth/masuk');
     $this->load->view('templates/footer');
 
   }

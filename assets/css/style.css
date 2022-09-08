@@ -409,6 +409,11 @@ footer .copyright p {
 .section-proyek {
 	margin-top: 60px !important;
 }
+.section-proyek .card:hover{
+	transform: scale(1.025);
+	transition-duration: .25s;
+	box-shadow: 0 2px 4px 8px rgba(0,0,0,.025);
+}
 .section-proyek .fa-roi {
 	position: absolute;
 	top: 20px;

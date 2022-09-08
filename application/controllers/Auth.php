@@ -45,7 +45,7 @@ class Auth extends CI_CONTROLLER{
       echo "VALIDATION FALSE";
       echo validation_errors();
 
-      $this->load->view('daftar');
+      $this->load->view('auth/daftar');
     } else {
       echo "VALIDATION TRUE";
 
@@ -72,11 +72,11 @@ class Auth extends CI_CONTROLLER{
       if(password_verify($pass,$rowSelected[0]['password'])){
         echo 'Sukses Masuk!';
       } else {
-        $this->load->view('masuk', $data);  
+        $this->load->view('auth/masuk', $data);  
       }
 
     } else {
-      $this->load->view('masuk', $data);
+      $this->load->view('auth/masuk', $data);
 
     }
 

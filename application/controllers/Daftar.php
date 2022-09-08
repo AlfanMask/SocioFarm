@@ -15,7 +15,7 @@ class Daftar extends CI_CONTROLLER{
     $data['navFocus'] = ['','','','',''];
 
     $this->load->view('templates/header',$data);
-    $this->load->view('daftar');
+    $this->load->view('auth/daftar');
     $this->load->view('templates/footer');
 
   }
