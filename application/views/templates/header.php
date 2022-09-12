@@ -58,7 +58,7 @@
           <li class="nav-item dropdown nav-item-login" style="float: right;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['username'] ?></a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Detail Akun</a></li>
+              <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Detail Akun</a></li>
               <li><a class="dropdown-item" href="#">Ubah Password (reset session)</a></li>
             </ul>
           </li>

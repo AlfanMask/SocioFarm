@@ -65,13 +65,15 @@ class Auth extends CI_CONTROLLER{
     $this->load->model('MAuth');
     $rowSelected = $this->MAuth->getMasuk($email);
 
-    // var_dump($rowSelected);
+    var_dump($rowSelected);
 
     $data['error_masuk'] = 'Email atau password salah!';
     if(!empty($rowSelected)){
       if(password_verify($pass,$rowSelected[0]['password'])){
         // echo 'Sukses Masuk!';
+        $this->session->set_userdata('userid',$rowSelected[0]['id']);
         $this->session->set_userdata('username',$rowSelected[0]['name']);
+
         redirect(base_url('home'));
         // $this->load->view('home');
       } else {

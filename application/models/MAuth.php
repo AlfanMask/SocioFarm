@@ -20,4 +20,15 @@ class MAuth extends CI_MODEL{
 
   }
 
+  public function getUser($id){
+    return $this->db->get_where('tbl_users',['id' => $id],1)->result_array();
+  
+  }
+
+  public function updateUser($data,$id){
+    $this->db->where('id',$id);
+    return $this->db->update('tbl_users',$data);
+  }
+
+
 }
