@@ -50,14 +50,29 @@
           <a class="nav-link <?= $navFocus[4] ?>" href="<?= base_url('kontak') ?>">Kontak</a>
         </li>
       </ul>
-      <ul class="nav-right">
-        <li class="nav-item nav-item-register">
-            <a class="nav-link link-register" href="<?= base_url('daftar') ?>">Daftar</a>
-        </li>
-        <li class="nav-item nav-item-login" style="float: right;">
-            <a class="nav-link link-login" href="<?= base_url('masuk') ?>">Masuk</a>
-        </li>
-      </ul>
+      <?php if(isset($_SESSION['username'])) : ?>
+        <ul class="nav-right">
+          <li class="nav-item nav-item-register">
+              <a class="nav-link link-register" href="<?= base_url('auth/unsetsession') ?>">Transaksi</a>
+          </li>
+          <li class="nav-item dropdown nav-item-login" style="float: right;">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['username'] ?></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Detail Akun</a></li>
+              <li><a class="dropdown-item" href="#">Ubah Password (reset session)</a></li>
+            </ul>
+          </li>
+        </ul>
+      <?php else : ?>
+        <ul class="nav-right">
+          <li class="nav-item nav-item-register">
+              <a class="nav-link link-register" href="<?= base_url('daftar') ?>">Daftar</a>
+          </li>
+          <li class="nav-item nav-item-login" style="float: right;">
+              <a class="nav-link link-login" href="<?= base_url('masuk') ?>">Masuk</a>
+          </li>
+        </ul>
+      <?php endif; ?>
     </div>
   </div>
 </nav>
