@@ -30,6 +30,25 @@ class Profile extends CI_CONTROLLER{
       'ktp_url'       => $userData['ktp_url']
     ];
 
+    // nama bank option selected
+    
+    $data['banks'] = ['BRI','BNI','BCA'];
+    $data['bankselected'] = ['','',''];
+
+    // foreach($data['banks'] as $bank){
+    //   if($userData['nama_bank'] == $bank){
+    //     $bank = 'selected';
+    //     break;
+    //   }
+    // }
+
+    for($i = 0; $i < count($data['banks']); $i++){
+      if($userData['nama_bank'] == $data['banks'][$i]){
+        $data['bankselected'][$i] = 'selected';
+        break;
+      }
+    }
+
     $this->load->view('templates/header',$data);
     $this->load->view('profile',$data);
     $this->load->view('templates/footer');
