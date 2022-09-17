@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container form-daftar">
+<h5 class="h5-orange text-center" style="color:#F23029">DAFTAR</h5>
 <form method="post" action="<?= base_url('auth/daftar') ?>">
     <div class="form-group">
       <label for="inputName">Nama</label>
@@ -34,5 +35,6 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Daftar</button>
+  <p class="bisa-masuk">Sudah punya akun? <a href="<?= base_url('masuk') ?>">Masuk</a></p>
 </form>
 </div>

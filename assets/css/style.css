@@ -35,6 +35,11 @@ body {
 h5 {
 	font-size: 20px;
 }
+.h5-orange{
+	letter-spacing: 5px;
+	font-weight: 600;
+	color: #F23029;
+}
 
 /* NAVBAR */
 a.nav-link {
@@ -720,6 +725,162 @@ progress::-webkit-progress-bar {
 	border-radius: 100px;
 }
 
+/* AUTH - Masuk and Daftar */
+.form-masuk, .form-daftar{
+	padding: 20px 0;
+}
+.form-masuk form, .form-daftar form{
+	display: table;
+	width: 50%;
+	margin:0 auto;
+	margin-top:40px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	background-color: #ffffff;
+	padding: 32px;
+	box-shadow: 0 15px 60 rgba(0,0,0,.05);
+}
+.form-masuk p, .form-daftar p{
+	margin-top: 24px;
+	line-height: 28px;
+	opacity: 0.7;
+}
+.form-masuk form label, .form-daftar form label {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.form-masuk form input,
+.form-daftar form input,
+.form-masuk form textarea,
+.form-daftar form textarea {
+	border: none;
+	background-color: #f7f7f7;
+}
+.form-masuk form input::placeholder,
+.form-daftar form input::placeholder,
+.form-masuk form textarea::placeholder,
+.form-daftar form textarea::placeholder {
+	font-family: "DM Sans", sans-serif;
+	opacity: 0.3;
+	font-weight: 400;
+}
+.form-masuk form input:focus,
+.form-daftar form input:focus,
+.form-masuk form textarea:focus,
+.form-daftar form textarea:focus {
+	border-color: #ffa12d !important;
+	transition: 0.25s;
+}
+.form-masuk form input, .form-daftar form input {
+	height: 48px;
+}
+.form-masuk .form-check, .form-daftar .form-check{
+	margin-top:16px;
+}
+.form-masuk form input[type='checkbox'], .form-daftar form input[type='checkbox']{
+	height: 24px;
+	width: 24px;
+	margin-top: 16px;
+	margin-right: 8px;
+}
+.form-masuk form label[for='gridCheck'], .form-daftar form label[for='gridCheck']{
+	font-size: 16px;
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+	opacity: .7;
+}
+.form-masuk button, .form-daftar button {
+	width: 100%;
+	border: none;
+	background-color: #ffa12d;
+	margin-top: 16px;
+	padding: 12px 32px;
+}
+.form-masuk button:hover, .form-daftar button:hover {
+	background-color: #ff8c00;
+	transform: scale(1.025);
+	transition: 0.25s;
+}
+.form-masuk .harus-daftar, .form-daftar .bisa-masuk{
+	text-align: center;
+	text-decoration: none !important;
+	opacity: .3;
+}
+.form-masuk .harus-daftar a, .form-daftar .bisa-masuk a{
+	color:#000000;
+}
+.form-masuk a.lupa-password{
+	font-weight: 400;
+	color:#000000;
+	text-decoration: none;
+	opacity: .3;
+	float: right;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.form-masuk a.lupa-password:hover{
+	opacity: .5;
+	transition: .3s;
+}
+
+/* SIMULASI */
+.simulasi{
+	margin-top:40px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	background-color: #ffffff;
+	padding: 32px 48px;
+	box-shadow: 0 15px 60 rgba(0,0,0,.05);
+}
+.simulasi p{
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+.simulasi .form-group label{
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.simulasi input[id='lembar'],
+.simulasi select{
+	width: 100%;
+}
+.simulasi input, .simulasi select{
+	height: 52px;
+	background-color: #f7f7f7;
+	border: none;
+	margin-bottom: 24px;
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+	color:rgba(0,0,0,.5);
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 8px;
+}
+.simulasi input::placeholder,
+.simulasi select option{
+	font-family: "DM Sans", sans-serif;
+	opacity: .8;
+	font-weight: 400;
+}
+.simulasi input:focus{
+	border-color: #ffa12d !important;
+	transition: 0.25s;
+}
+.simulasi .input-full{
+	width: 100%;
+}
+.simulasi .info-simulasi{
+	color:#FFA12D;
+	opacity: .7;
+	font-weight: 500;
+	font-size: 16px;
+}
 
 /* MEDIA QUERY */
 /* mobile */

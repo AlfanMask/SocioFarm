@@ -114,8 +114,8 @@ function changePict4(){
 // SIMULASI
 const harga = document.querySelector('#harga');
 const elm_lembar = document.querySelector('#lembar');
-const elm_modal = document.querySelector('#modal');
 const elm_roi = document.querySelector('#roi');
+const elm_modal = document.querySelector('#modal');
 const elm_profit = document.querySelector('#profit');
 const elm_pendapatan = document.querySelector('#pendapatan');
 
@@ -131,9 +131,13 @@ function updateProfit(){
   profit = numberWithCommas(profit);
   pendapatan = numberWithCommas(pendapatan);
 
-  elm_modal.innerHTML = 'Rp. ' + modal;
-  elm_profit.innerHTML = 'Rp. ' + profit;
-  elm_pendapatan.innerHTML = 'Rp. ' + pendapatan;
+  elm_modal.setAttribute('value','Rp. ' + modal);
+  elm_profit.setAttribute('value','Rp. ' + profit);
+  elm_pendapatan.setAttribute('value', 'Rp. ' + pendapatan);
+
+  // elm_modal.innerHTML = 'Rp. ' + modal;
+  // elm_profit.innerHTML = 'Rp. ' + profit;
+  // elm_pendapatan.innerHTML = 'Rp. ' + pendapatan;
 
   console.log('lembar: ' + elm_lembar.value);
   console.log('harga: ' + harga);
