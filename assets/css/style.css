@@ -1028,6 +1028,13 @@ progress::-webkit-progress-bar {
 		padding: 12px;
 		border:none;
 	}
+	.form-masuk form, .form-daftar form{
+		width: 80%;
+		padding: 32px 16px;
+	}
+	.form-masuk a.lupa-password{
+		margin-left: -24px;
+	}
 	footer {
 		margin-top:40px;
 		padding: 40px 0;
