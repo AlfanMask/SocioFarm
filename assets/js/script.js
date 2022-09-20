@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
 // SINGLE PROYEK - Gallery View
 
 const gallery_show = document.querySelector('.gallery-show img');
@@ -153,3 +154,16 @@ function numberWithCommas(x) {
   parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
   return parts.join(",");
 }
+
+function changePP(){
+  const alertPP = document.querySelector('.form-profile form .alert-pp');
+  alertPP.style.display = "none";
+  console.log('onchange masuk!');
+
+}
+
+const inputImg = document.querySelector('.form-profile form .img-file');
+inputImg.
+
+
+});

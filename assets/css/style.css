@@ -736,7 +736,6 @@ progress::-webkit-progress-bar {
 	margin-top:40px;
 	background-color: #FFFFFF;
 	border-radius: 15px;
-	background-color: #ffffff;
 	padding: 32px;
 	box-shadow: 0 15px 60 rgba(0,0,0,.05);
 }
@@ -881,6 +880,75 @@ progress::-webkit-progress-bar {
 	font-weight: 500;
 	font-size: 16px;
 }
+
+/* FORM-PROFILE */
+.form-profile form{
+	padding: 40px 60px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0 15px 60 rgba(0,0,0,.05);
+}
+.form-profile form img.pp{
+	width: 100%;
+	border-radius: 50%;
+}
+.form-profile form .img-file{
+	display: none;
+	cursor: pointer;
+}
+.form-profile form label[for='img_file']{
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	/* background-color: #ffa12d; */
+	color:#999;
+	cursor: pointer;
+}
+.form-profile form label[for='img_file']:hover{
+	transform: scale(1.05);
+	transition: .3s;
+}
+.form-profile p{
+	margin-top: 24px;
+	line-height: 28px;
+	opacity: 0.7;
+}
+.form-profile form label {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.form-profile form input, .form-profile form select {
+	border: none;
+	background-color: #f7f7f7;
+	height: 48px;
+	margin-bottom: 16px;
+}
+.form-profile form input::placeholder {
+	font-family: "DM Sans", sans-serif;
+	opacity: 0.3;
+	font-weight: 400;
+}
+.form-profile form input:focus {
+	border-color: #ffa12d !important;
+	transition: 0.25s;
+}
+.form-profile button {
+	width: 100%;
+	border: none;
+	background-color: #ffa12d;
+	margin-top: 16px;
+	padding: 12px 32px;
+}
+.form-profile button:hover {
+	background-color: #ff8c00;
+	transform: scale(1.025);
+	transition: 0.25s;
+}
+
 
 /* MEDIA QUERY */
 /* mobile */
