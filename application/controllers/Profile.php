@@ -6,6 +6,7 @@ class Profile extends CI_CONTROLLER{
     parent::__construct();
 
     // load something
+    $this->load->helper('file');
 
   }
 
@@ -57,11 +58,11 @@ class Profile extends CI_CONTROLLER{
 
   public function update(){
     $userid = $_SESSION['userid'];
+    $this->load->model('MAuth');
+    $userData = $this->MAuth->getUser($userid[0]);
 
-    // $img_url = $_POST['img_url'];
     $userUpdate = [
-      'img_url'       => 'test_img',
-      // 'img_url' => $_POST['img_url'],
+      'img_url'       => $userData[0]['img_url'],
       'name'          => $_POST['nama'],
       'telepon'       => $_POST['telepon'],
       'ttl'           => $_POST['ttl'],
@@ -71,9 +72,37 @@ class Profile extends CI_CONTROLLER{
       'norek'         => $_POST['norek'],
       'nama_rekening' => $_POST['nama_rekening'],
       'cabang_bank'   => $_POST['cabang_bank'],
-      'ktp_url'       => 'test_ktp'
-      // 'ktp_url' => $_POST['ktp_url']
+      'ktp_url'       => $userData[0]['ktp_url']
     ];
+
+    // upload images
+    $config['upload_path'] = 'uploads/pp';
+    $config['allowed_types'] = 'jpg|jpeg|png';
+    $config['max_size'] = '1024';
+
+    $this->load->library('upload',$config);
+
+    if(!$this->upload->do_upload('img_file')){
+      $data['error_img'] = $this->upload->display_errors();
+      var_dump('IMG ERROR: '. $data['error_img']);
+    } else {
+      $data_img = $this->upload->data();
+      $userUpdate['img_url'] = $data_img['file_name'];
+      
+      // delete old img
+      unlink('uploads/pp/'.$userData[0]['img_url']);
+    }
+
+    if(!$this->upload->do_upload('ktp_file')){
+      $data['error_ktp'] = $this->upload->display_errors();
+      var_dump('KTP ERROR: '. $data['error_ktp']);
+    } else {
+      $data_ktp = $this->upload->data();
+      $userUpdate['ktp_url'] = $data_ktp['file_name'];
+
+      // delete old ktp
+      unlink('uploads/pp/'.$userData[0]['ktp_url']);
+    }
 
     $this->load->model('MAuth');
     echo $this->MAuth->updateUser($userUpdate,$userid);
