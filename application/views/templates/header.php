@@ -42,7 +42,7 @@
             Mitra
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Daftar Mitra</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('daftarmitra') ?>">Daftar Mitra</a></li>
             <li><a class="dropdown-item" href="#">Cara Menjadi Mitra</a></li>
           </ul>
         </li>
