@@ -1,6 +1,16 @@
+// JQuery Functions
 document.addEventListener("DOMContentLoaded", function(event) { 
-// SINGLE PROYEK - Gallery View
 
+$('.form-profile form .img-file').change(function(){
+  const alertPP = document.querySelector('.form-profile form .alert-pp');
+  alertPP.style.display = "block";
+});
+
+
+});
+
+
+// SINGLE PROYEK - Gallery View
 const gallery_show = document.querySelector('.gallery-show img');
 const pict1 = document.querySelector('.single-gallery .pict-1 img');
 const pict2 = document.querySelector('.single-gallery .pict-2 img');
@@ -153,11 +163,3 @@ function numberWithCommas(x) {
   parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
   return parts.join(",");
 }
-
-$('.form-profile form .img-file').change(function(){
-  const alertPP = document.querySelector('.form-profile form .alert-pp');
-  alertPP.style.display = "block";
-});
-
-
-});
