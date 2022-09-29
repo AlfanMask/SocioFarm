@@ -7,11 +7,9 @@
     <div class="row">
       <div class="col-lg-3 col-md-9 col-sm-12">
         <img src="<?= base_url('uploads/pp/'.$userData['img_url']) ?>" alt="" class="pp">
-        <div class="alert alert-success alert-pp" role="alert">
-          Gambar berhasil terpilih, update profile untuk melihat perubahan!
-        </div>
-        <label for="img_file"><i class="fa fa-pencil" style="font-size:18px;"></i> Upload Foto</label>
-        <input type="file" class="form-control-file img-file" id="img_file" name="img_file" value="<?= $userData['img_url'] ?>" placeholder="asd" onchange="changePP()">
+        <span class="text-center mt-4 alert-pp" style="color:#FFA12D">Gambar berhasil terpilih, update profile untuk melihat perubahan!</span>
+        <label for="img_file" class="label-editpp"><i class="fa fa-pencil" style="font-size:18px;"></i> Upload Foto</label>
+        <input type="file" class="form-control-file img-file" id="img_file" name="img_file" value="<?= $userData['img_url'] ?>" placeholder="asd">
       </div>
       <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="form-group">
@@ -81,6 +79,11 @@
 
         <div class="form-group">
           <label for="ktp_file">Upload KTP</label>
+          <?php if(!empty($userData['ktp_url'])) : ?>
+            <p style="color:#FFA12D;margin-top:-10px">Terimakasih, Anda telah mengupload KTP</p>
+          <?php else: ?>
+            <p style="color:#FFA12D;margin-top:-10px">Mohon upload KTP Anda</p>
+          <?php endif; ?>
           <input type="file" class="form-control" placeholder="KTP" name="ktp_file" value="<?= $userData['ktp_url'] ?>">
         </div>
       </div>

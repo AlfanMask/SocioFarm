@@ -894,6 +894,7 @@ progress::-webkit-progress-bar {
 }
 .form-profile form .img-file{
 	display: none;
+	/* visibility: hidden; */
 	cursor: pointer;
 }
 .form-profile form label[for='img_file']{
@@ -908,6 +909,9 @@ progress::-webkit-progress-bar {
 .form-profile form label[for='img_file']:hover{
 	transform: scale(1.05);
 	transition: .3s;
+}
+.form-profile form .alert-pp{
+	display: none;
 }
 .form-profile p{
 	margin-top: 24px;

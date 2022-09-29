@@ -122,7 +122,6 @@ const elm_pendapatan = document.querySelector('#pendapatan');
 
 // console.log('harga:' + harga.innerHTML.replace('.',''));
 
-
 function updateProfit(){
   let modal = lembar.value*harga.innerHTML.replace('.','');
   let profit = roi.value/100*modal;
@@ -155,15 +154,10 @@ function numberWithCommas(x) {
   return parts.join(",");
 }
 
-function changePP(){
+$('.form-profile form .img-file').change(function(){
   const alertPP = document.querySelector('.form-profile form .alert-pp');
-  alertPP.style.display = "none";
-  console.log('onchange masuk!');
-
-}
-
-const inputImg = document.querySelector('.form-profile form .img-file');
-inputImg.
+  alertPP.style.display = "block";
+});
 
 
 });

@@ -23,7 +23,8 @@
       <h3>Media</h3>
         <ul>
           <li><a href="#">Tentang</a></li>
-          <li><a href="#">Privasi</a></li>
+          <li><a href="#">Syarat dan Ketentuan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="<?= base_url('kontak') ?>">Kontak</a></li>
         </ul>

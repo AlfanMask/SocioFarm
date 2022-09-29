@@ -82,6 +82,7 @@ class Profile extends CI_CONTROLLER{
 
     $this->load->library('upload',$config);
 
+    // check image upload
     if(!$this->upload->do_upload('img_file')){
       $data['error_img'] = $this->upload->display_errors();
       var_dump('IMG ERROR: '. $data['error_img']);
@@ -93,6 +94,7 @@ class Profile extends CI_CONTROLLER{
       unlink('uploads/pp/'.$userData[0]['img_url']);
     }
 
+    // check ktp_img upload
     if(!$this->upload->do_upload('ktp_file')){
       $data['error_ktp'] = $this->upload->display_errors();
       var_dump('KTP ERROR: '. $data['error_ktp']);
@@ -105,7 +107,9 @@ class Profile extends CI_CONTROLLER{
     }
 
     $this->load->model('MAuth');
-    echo $this->MAuth->updateUser($userUpdate,$userid);
+    $this->MAuth->updateUser($userUpdate,$userid);
+
+    redirect('profile');
 
   }
 
