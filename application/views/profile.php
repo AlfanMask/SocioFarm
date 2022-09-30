@@ -46,8 +46,18 @@
         </div>
         
         <div class="form-group">
-          <label for="telepon">Telepon</label>
+          <label for="telepon">Pekerjaan</label>
           <input type="text" class="form-control" placeholder="Pekerjaan" name="pekerjaan" value="<?= $userData['pekerjaan'] ?>">
+        </div>
+
+        <div class="form-group">
+          <label for="ktp_file">Upload KTP</label>
+          <input type="file" class="form-control" placeholder="KTP" name="ktp_file" value="<?= $userData['ktp_url'] ?>">
+          <?php if(!empty($userData['ktp_url'])) : ?>
+            <p style="color:#FFA12D;margin-top:-10px">Terimakasih, Anda telah mengupload KTP sebelumnya</p>
+          <?php else: ?>
+            <p style="color:#FFA12D;margin-top:-10px">Mohon upload KTP Anda</p>
+          <?php endif; ?>
         </div>
 
       </div>
@@ -77,15 +87,6 @@
           <input type="text" class="form-control" placeholder="Cabang Bank" name="cabang_bank" value="<?= $userData['cabang_bank'] ?>">
         </div>
 
-        <div class="form-group">
-          <label for="ktp_file">Upload KTP</label>
-          <?php if(!empty($userData['ktp_url'])) : ?>
-            <p style="color:#FFA12D;margin-top:-10px">Terimakasih, Anda telah mengupload KTP</p>
-          <?php else: ?>
-            <p style="color:#FFA12D;margin-top:-10px">Mohon upload KTP Anda</p>
-          <?php endif; ?>
-          <input type="file" class="form-control" placeholder="KTP" name="ktp_file" value="<?= $userData['ktp_url'] ?>">
-        </div>
       </div>
     </div>
 

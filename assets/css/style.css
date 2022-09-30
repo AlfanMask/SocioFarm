@@ -953,6 +953,22 @@ progress::-webkit-progress-bar {
 	transition: 0.25s;
 }
 
+/* SYARAT KETENTUAN & KEBIJAKAN PRIVASI */
+.syarat-ketentuan p, .kebijakan-privasi p{
+	opacity:.7;
+	font-weight: 400;
+	line-height: 180%;
+}
+.syarat-ketentuan h2, .syarat-ketentuan h3,
+.kebijakan-privasi h2, .kebijakan-privasi h3{
+	opacity:.7;
+}
+.syarat-ketentuan ul li,
+.kebijakan-privasi ul li{
+	font-size:16px;
+	opacity: .7;
+}
+
 
 /* MEDIA QUERY */
 /* mobile */
