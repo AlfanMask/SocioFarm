@@ -969,6 +969,38 @@ progress::-webkit-progress-bar {
 	opacity: .7;
 }
 
+/* PORTFOLIO */
+.bg-portfolio{
+	background-color: #ffa12d;
+}
+.bg-portfolio img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.container-portfolio{
+	margin-top:-140px;
+	padding:40px 0;
+	text-align: center;
+	border-radius: 25px;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.15);
+}
+.container-portfolio h2{
+	margin-top: 60px;
+	font-weight: 700;
+}
+.container-portfolio .btn{
+	margin-top: 40px;
+	padding: 20px 40px;
+	background-color: #FFA12D;
+	color:#FFFFFF;
+}
+.container-portfolio .btn:hover{
+	transform: scale(1.05);
+	transition: .3s;
+}
+
 
 /* MEDIA QUERY */
 /* mobile */

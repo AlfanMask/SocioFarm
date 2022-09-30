@@ -53,13 +53,13 @@
       <?php if(isset($_SESSION['username'])) : ?>
         <ul class="nav-right">
           <li class="nav-item nav-item-register">
-              <a class="nav-link link-register" href="<?= base_url('auth/unsetsession') ?>">Transaksi</a>
+              <a class="nav-link link-register" href="#">Transaksi</a>
           </li>
           <li class="nav-item dropdown nav-item-login" style="float: right;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['username'] ?></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Detail Akun</a></li>
-              <li><a class="dropdown-item" href="#">Ubah Password (reset session)</a></li>
+              <li><a class="dropdown-item" href="<?= base_url('auth/unsetsession') ?>">Ubah Password (reset session)</a></li>
             </ul>
           </li>
         </ul>

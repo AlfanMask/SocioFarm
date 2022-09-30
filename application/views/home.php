@@ -54,7 +54,7 @@
       <h5>PROYEK</h5>
       <h1>Puluhan Proyek Perlu Bantuanmu</h1>
       <p>Mari bantu peternak lokal mengembangkan usahanya, dan ambil keuntungannya.</p>
-      <a href="#" class="btn">Lihat lebih banyak</a>
+      <a href="<?= base_url('proyek') ?>" class="btn">Lihat lebih banyak</a>
       <div class="achievements">
         <div class="achive achive-1">
           <div class="icon"><i class="fa fa-check-square-o" style="font-size:32px"></i></div>

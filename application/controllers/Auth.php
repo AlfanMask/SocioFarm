@@ -93,6 +93,8 @@ class Auth extends CI_CONTROLLER{
   public function unsetsession(){
     unset($_SESSION['username']);
 
+    redirect('home');
+
   }
 
 
