@@ -19,116 +19,31 @@
 
 <!-- PROYEK -->
 <div class="container section-proyek">
-  <div class="row">
+  <div class="row d-flex justify-content-center">
 
-    <!-- test go to single proyek -->
-    <a href="<?= base_url('singleproyek') ?>" class="" style="text-decoration: none; color:#000">
-      <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+    <!-- dynamic -->
+    <?php foreach($projects as $project) : ?>
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+    <a href="<?= base_url('singleproyek/').$project['id'] ?>" class="" style="text-decoration: none; color:#000">
       <div class="card">
-        <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
+        <div class="img-card-proyek"><img src="<?= base_url('uploads/proyek/').$project['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
         <div class="card-body">
-          <div class="fa-roi"><p>Total ROI 17%</p></div>
-          <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
+          <div class="fa-roi"><p>Total ROI <?= $project['roi_top'] ?>%</p></div>
+          <p class="proyek-title"><?= $project['name'] ?></p>
           <p class="card-text">Terkumpul</p>
-          <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
+          <h5 class="card-title" style="font-weight:bold;">Rp <?= number_format($project['price'],0,',','.') ?></h5>
         </div>
       </div>
     </a>
-    <!-- test go to single proyek -->
-
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-        <div class="fa-roi"><p>Total ROI 17%</p></div>
-        <p class="proyek-title">Proyek Peternakan Kambing Jawa Bpk. Zainudin - Part 2</p>
-        <p class="card-text">Terkumpul</p>
-        <h5 class="card-title" style="font-weight:bold;">Rp 500.000</h5>
-      </div>
-    </div>
-    </div>
-
-    <a href="#" class="btn">Lihat lebih banyak</a>
+    <?php endforeach; ?>
 
   </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-2"><a href="#" class="btn text-center">Lihat lebih banyak</a></div>
+  </div>
+
 </div>
 
 <!-- REKAM JEJAK -->
