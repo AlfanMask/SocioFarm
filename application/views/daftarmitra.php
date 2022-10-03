@@ -11,101 +11,20 @@
 <div class="container section-proyek">
   <div class="row">
 
-    <!-- test go to single proyek -->
-    <a href="<?= base_url('singleproyek') ?>" class="" style="text-decoration: none; color:#000">
-      <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+    <?php foreach($mitras as $mitra) : ?>
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+      <a href="<?= base_url('mitra/').$mitra['id'] ?>" class="" style="text-decoration: none; color:#000">
       <div class="card">
-        <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
+        <div class="img-card-proyek"><img src="<?= base_url('uploads/mitra/').$mitra['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
         <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
+          <div class="fa-roi" style="background-color:#FFA12D"><p><?= $mitra['proyek'] ?> proyek telah berjalan</p></div>
+          <p class="card-text"><?= $mitra['alamat'] ?></p>
+          <h5 class="card-title" style="font-weight:bold;"><?= $mitra['nama'] ?></h5>
         </div>
       </div>
-    </a>
-    <!-- test go to single proyek -->
-
+      </a>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-    <div class="card">
-      <div class="img-card-proyek"><img src="<?= base_url('assets/img/bg-proyek-card.jpg') ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-      <div class="card-body">
-          <div class="fa-roi" style="background-color:#FFA12D"><p>5 proyek telah berjalan</p></div>
-          <p class="card-text">Colomadu, Karanganyar</p>
-          <h5 class="card-title" style="font-weight:bold;">Bapak Zainudin</h5>
-        </div>
-    </div>
-    </div>
+    <?php endforeach; ?>
 
     <a href="#" class="btn">Lihat lebih banyak</a>
 
