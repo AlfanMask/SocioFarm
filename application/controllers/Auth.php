@@ -41,19 +41,26 @@ class Auth extends CI_CONTROLLER{
     $this->form_validation->set_rules('inputPasswordConf','Password Confirmation','required|matches[inputPassword]');
     $this->form_validation->set_rules('inputAddress','Address','required');
 
-    if($this->form_validation->run() == false){
-      echo "VALIDATION FALSE";
-      echo validation_errors();
+    // set error message
+    $this->form_validation->set_message('required', 'Harus diisi');
+    $this->form_validation->set_message('is_unique', 'Email tersebut telah digunakan');
+    $this->form_validation->set_message('matches','Konfirmasi password tidak sesuai');
 
+    if($this->form_validation->run() == false){
+      // reload page with error validations
+      $data['navFocus'] = ['','','','',''];
+      $this->load->view('templates/header',$data);
       $this->load->view('auth/daftar');
+      $this->load->view('templates/footer');
     } else {
       echo "VALIDATION TRUE";
 
       $this->load->model('MAuth');
       $this->MAuth->insertUser($data);
+
+      $this->session->set_flashdata('alert','<div class="alert alert-success" role="alert">Pendaftaran berhasil, silakan login</div>');
+      redirect('masuk');
     }
-    
-    var_dump($name,$email,$pass,$passconf,$address);
   
   }
 

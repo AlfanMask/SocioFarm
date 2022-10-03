@@ -59,7 +59,7 @@ class Profile extends CI_CONTROLLER{
   public function update(){
     $userid = $_SESSION['userid'];
     $this->load->model('MAuth');
-    $userData = $this->MAuth->getUser($userid[0]);
+    $userData = $this->MAuth->getUser($userid);
 
     $userUpdate = [
       'img_url'       => $userData[0]['img_url'],
