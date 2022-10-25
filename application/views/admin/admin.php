@@ -74,7 +74,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="<?= base_url('admin') ?>" class="brand-link">
       <img src="<?= base_url('assets/img/') ?>logo-footer-sociofarm.png" alt="AdminLTE Logo" style="qmargin-left:8px">
     </a>
 
@@ -427,12 +427,6 @@
 
   </div>
   <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 
 
   <!-- jQuery -->
