@@ -98,7 +98,7 @@
 
           <li class="nav-item">
             <a href="<?= base_url('admin') ?>" class="nav-link">
-              <i class="nav-icon fa fa-bar-chart-o"></i>  
+              <i class="nav-icon fa fa-bar-chart-o"></i>
               <p style="color:#FFFFFF">
                 Dashboard
               </p>
@@ -339,83 +339,28 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                  Arif Budiman
-                </td>
-                <td>Peternakan Kambing Pak Maun</td>
-                <td>
-                  <small class="text-success mr-1">
-                    <i class="fas fa-arrow-up"></i>
-                    12%
-                  </small>
-                  12,000 Sold
-                </td>
-                <td>
-                  <a href="#" class="text-muted">
-                    <i class="fas fa-search"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                  Zainal Arifin
-                </td>
-                <td>Bebek Pak Budi</td>
-                <td>
-                  <small class="text-warning mr-1">
-                    <i class="fas fa-arrow-down"></i>
-                    0.5%
-                  </small>
-                  123,234 Sold
-                </td>
-                <td>
-                  <a href="#" class="text-muted">
-                    <i class="fas fa-search"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                  Budi Praseptyo
-                  &nbsp;<span class="badge bg-success">NEW INVESTOR</span>
-                </td>
-                <td>Peternakan Kambing Pak Muzammil</td>
-                <td>
-                  <small class="text-danger mr-1">
-                    <i class="fas fa-arrow-down"></i>
-                    3%
-                  </small>
-                  198 Sold
-                </td>
-                <td>
-                  <a href="#" class="text-muted">
-                    <i class="fas fa-search"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                  Irfan Kurniawan
-                </td>
-                <td>Bebek Pak Haji Suranto</td>
-                <td>
-                  <small class="text-success mr-1">
-                    <i class="fas fa-arrow-up"></i>
-                    63%
-                  </small>
-                  87 Sold
-                </td>
-                <td>
-                  <a href="#" class="text-muted">
-                    <i class="fas fa-search"></i>
-                  </a>
-                </td>
-              </tr>
+
+              <?php foreach ($acts as $act) : ?>
+                <?php foreach ($projects as $project) : ?>
+                  <?php if ($act['proyek_id'] == $project['id']) : ?>
+                    <tr>
+                      <td>
+                        <?= $act['nama_investor'] ?>
+                      </td>
+                      <td><?= $project['name'] ?></td>
+                      <td>
+                        Rp <?= number_format($act['jumlah'], 0, ',', '.') ?>
+                      </td>
+                      <td>
+                        <a href="#" class="text-muted">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+              <?php endforeach; ?>
+
             </tbody>
           </table>
         </div>
