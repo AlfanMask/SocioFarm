@@ -40,6 +40,16 @@ h5 {
 	font-weight: 600;
 	color: #F23029;
 }
+.btn-orange {
+	border: none !important;
+	background-color: #ffa12d !important;
+	color: #ffffff !important;
+	transition: 0.3s !important;
+}
+.btn-orange:hover {
+	background-color: #ff8c00 !important;
+	transition: 0.25s !important;
+}
 
 /* NAVBAR */
 a.nav-link {
@@ -726,7 +736,7 @@ progress::-webkit-progress-bar {
 }
 
 /* AUTH - Masuk and Daftar */
-.form-masuk, .form-daftar{
+.form-masuk, .form-daftar, .form-admin{
 	padding: 20px 0;
 }
 .form-masuk form, .form-daftar form{
@@ -739,12 +749,22 @@ progress::-webkit-progress-bar {
 	padding: 32px;
 	box-shadow: 0 15px 60 rgba(0,0,0,.05);
 }
-.form-masuk p, .form-daftar p{
+.form-admin form{
+	display: table;
+	width: 75%;
+	margin:0 auto;
+	margin-top:40px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	padding: 32px;
+	box-shadow: 0 15px 60 rgba(0,0,0,.05);
+}
+.form-masuk p, .form-daftar p, .form-admin p{
 	margin-top: 24px;
 	line-height: 28px;
 	opacity: 0.7;
 }
-.form-masuk form label, .form-daftar form label {
+.form-masuk form label, .form-daftar form label, .form-admin form label {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	font-weight: 600;
@@ -753,15 +773,18 @@ progress::-webkit-progress-bar {
 }
 .form-masuk form input,
 .form-daftar form input,
+.form-admin form input,
 .form-masuk form textarea,
-.form-daftar form textarea {
+.form-daftar form textarea,
+.form-admin form textarea{
 	border: none;
 	background-color: #f7f7f7;
 }
 .form-masuk form input::placeholder,
 .form-daftar form input::placeholder,
 .form-masuk form textarea::placeholder,
-.form-daftar form textarea::placeholder {
+.form-daftar form textarea::placeholder,
+.form-admin form textarea::placeholder{
 	font-family: "DM Sans", sans-serif;
 	opacity: 0.3;
 	font-weight: 400;
@@ -769,36 +792,37 @@ progress::-webkit-progress-bar {
 .form-masuk form input:focus,
 .form-daftar form input:focus,
 .form-masuk form textarea:focus,
-.form-daftar form textarea:focus {
+.form-daftar form textarea:focus,
+.form-admin form textarea:focus{
 	border-color: #ffa12d !important;
 	transition: 0.25s;
 }
-.form-masuk form input, .form-daftar form input {
+.form-masuk form input, .form-daftar form input, .form-admin form input{
 	height: 48px;
 }
-.form-masuk .form-check, .form-daftar .form-check{
+.form-masuk .form-check, .form-daftar .form-check, .form-admin .form-check{
 	margin-top:16px;
 }
-.form-masuk form input[type='checkbox'], .form-daftar form input[type='checkbox']{
+.form-masuk form input[type='checkbox'], .form-daftar form input[type='checkbox'], .form-admin form input[type='checkbox']{
 	height: 24px;
 	width: 24px;
 	margin-top: 16px;
 	margin-right: 8px;
 }
-.form-masuk form label[for='gridCheck'], .form-daftar form label[for='gridCheck']{
+.form-masuk form label[for='gridCheck'], .form-daftar form label[for='gridCheck'], .form-admin form label[for='gridCheck']{
 	font-size: 16px;
 	font-family: "DM Sans", sans-serif;
 	font-weight: 400;
 	opacity: .7;
 }
-.form-masuk button, .form-daftar button {
+.form-masuk button, .form-daftar button, .form-admin button {
 	width: 100%;
 	border: none;
 	background-color: #ffa12d;
 	margin-top: 16px;
 	padding: 12px 32px;
 }
-.form-masuk button:hover, .form-daftar button:hover {
+.form-masuk button:hover, .form-daftar button:hover, .form-admin button:hover {
 	background-color: #ff8c00;
 	transform: scale(1.025);
 	transition: 0.25s;

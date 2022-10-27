@@ -108,7 +108,7 @@
           <li class="nav-item">
             <a href="<?= base_url('admin/projects') ?>" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
-              <p>
+              <p style="color:#FFFFFF">
                 Projects
               </p>
             </a>
@@ -117,7 +117,7 @@
           <li class="nav-item">
             <a href="<?= base_url('admin/mitras') ?>" class="nav-link">
               <i class="nav-icon fa fa-users"></i>
-              <p style="color:#FFFFFF">
+              <p>
                 Mitras
               </p>
             </a>
@@ -137,13 +137,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Mitras</h1>
-            <a href="<?= base_url('admin/addmitra') ?>" class="btn btn-primary btn-orange" style="margin-top:20px; padding:10px 20px;">+ Tambah Mitra</a>
+            <h1 class="m-0">Tambah Proyek</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?= base_url('admin') ?>">Admin</a></li>
-              <li class="breadcrumb-item active">Mitras</li>
+              <li class="breadcrumb-item active">Projects</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -151,34 +150,39 @@
     </div>
     <!-- /.content-header -->
 
-    <!-- PROYEK -->
-    <div class="section-proyek" style="padding: 0px 20px; margin-top:20px !important">
-      <div class="row">
-        <?php foreach ($mitras as $mitra) : ?>
-          <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
-            <a href="<?= base_url('mitra/') . $mitra['id'] ?>" class="" style="text-decoration: none; color:#000">
-              <div class="card">
-                <div class="img-card-proyek"><img src="<?= base_url('uploads/mitra/') . $mitra['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
-                <div class="card-body">
-                  <div class="fa-roi" style="background-color:#FFA12D">
-                    <p><?= $mitra['proyek'] ?> proyek telah berjalan</p>
-                  </div>
-                  <p class="card-text"><?= $mitra['alamat'] ?></p>
-                  <h5 class="card-title" style="font-weight:bold;"><?= $mitra['nama'] ?></h5>
-                </div>
-                <div class="row" style="padding: 10px;">
-                  <div class="col-6">
-                    <a href="<?= base_url('admin/editmitra/') . $mitra['id'] ?>" class="btn btn-outline-warning" style="width:100%; background-color:#ffc107;">Edit</a>
-                  </div>
-                  <div class="col-6">
-                    <a href="<?= base_url('admin/deletemitra/') . $mitra['id'] ?>" onclick="return confirm('Anda yakin akan menghapus mitra ini?')" class="btn btn-outline-danger" style="width:100%; background-color:#dc3545;">Hapus</a>
-                  </div>
-                </div>
-              </div>
-            </a>
+    <!-- NOT FINISHED FORM -->
+    <div class="form-admin">
+      <form method="post" action="<?= base_url('auth/daftar') ?>">
+        <div class="form-group">
+          <label for="nama_proyek">Nama Proyek</label>
+          <input type="text" class="form-control" name="nama_proyek" id="nama_proyek" placeholder="Nama Proyek">
+        </div>
+        <div class="form-group">
+          <label for="harga">Harga</label>
+          <input type="number" class="form-control" name="harga" id="harga" placeholder="Harga">
+        </div>
+        <div class="form-group">
+          <label for="deskripsi">Deskripsi</label>
+          <textarea class="form-control" name="deskripsi" id="deskripsi" row="1" placeholder="Masukkan deskripsi proyek"></textarea>
+        </div>
+        <div class="simulasi">
+          <div class="row">
+            <div class="col-6">
+              <input type="number" name="lembar" id="lembar" value="0" min="0" onchange="updateProfit()">
+            </div>
+            <div class="col-6">
+              <select name="roi" id="roi" onchange="updateProfit()">
+                <option value="16">16%</option>
+                <option value="17">17%</option>
+                <option value="18">18%</option>
+                <option value="19">19%</option>
+                <option value="20">20%</option>
+              </select>
+            </div>
           </div>
-        <?php endforeach; ?>
-      </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambahkan Proyek</button>
+      </form>
     </div>
 
 

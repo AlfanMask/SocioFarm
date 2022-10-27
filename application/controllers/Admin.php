@@ -4,7 +4,10 @@ class Admin extends CI_CONTROLLER{
 
   public function __construct() {
     parent::__construct();
-
+    
+    // load something
+    $this->load->library('form_validation');
+    $this->load->helper('form');
   }
 
   public function index(){
@@ -40,6 +43,13 @@ class Admin extends CI_CONTROLLER{
 
     $this->load->view('admin/header');
     $this->load->view('admin/mitras',$data);
+    $this->load->view('admin/footer');
+
+  }
+
+  public function addproject(){
+    $this->load->view('admin/header');
+    $this->load->view('admin/addproject');
     $this->load->view('admin/footer');
 
   }

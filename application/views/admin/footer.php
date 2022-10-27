@@ -27,8 +27,6 @@
 
     <!-- OPTIONAL SCRIPTS -->
     <script src="plugins/chart.js/Chart.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="<?= base_url('dashboard/') ?>dist/js/demo.js"></script>
 
 </body>
 </html>
