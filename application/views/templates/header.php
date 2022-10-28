@@ -70,6 +70,9 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Detail Akun</a></li>
               <li><a class="dropdown-item" href="<?= base_url('auth/unsetsession') ?>">Ubah Password (reset session)</a></li>
+              <?php if($_SESSION['userole'] == 2) : ?>
+                <li><a class="dropdown-item" href="<?= base_url('admin') ?>">Admin Dashboard</a></li>
+              <?php endif; ?>
             </ul>
           </li>
         </ul>

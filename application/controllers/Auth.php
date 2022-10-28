@@ -72,14 +72,14 @@ class Auth extends CI_CONTROLLER{
     $this->load->model('MAuth');
     $rowSelected = $this->MAuth->getMasuk($email);
 
-    var_dump($rowSelected);
-
     $data['error_masuk'] = 'Email atau password salah!';
     if(!empty($rowSelected)){
       if(password_verify($pass,$rowSelected[0]['password'])){
         // echo 'Sukses Masuk!';
         $this->session->set_userdata('userid',$rowSelected[0]['id']);
         $this->session->set_userdata('username',$rowSelected[0]['name']);
+        $this->session->set_userdata('userole',$rowSelected[0]['role']);
+        $this->session->set_userdata('pp_url',$rowSelected[0]['img_url']);
 
         redirect(base_url('home'));
         // $this->load->view('home');
@@ -98,7 +98,10 @@ class Auth extends CI_CONTROLLER{
 
 
   public function unsetsession(){
+    unset($_SESSION['userid']);
     unset($_SESSION['username']);
+    unset($_SESSION['userole']);
+    unset($_SESSION['pp_url']);
 
     redirect('home');
 

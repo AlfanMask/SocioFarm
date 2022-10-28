@@ -11,6 +11,7 @@ class Admin extends CI_CONTROLLER{
   }
 
   public function index(){
+    if($_SESSION['userole'] == 2){
     // load recent activitie datas
     $this->load->model('MAct');
     $data['acts'] = $this->MAct->getAllActs();
@@ -22,6 +23,9 @@ class Admin extends CI_CONTROLLER{
     $this->load->view('admin/header');
     $this->load->view('admin/admin',$data);
     $this->load->view('admin/footer');
+    } else {
+      redirect('home');
+    }
 
   }
   
