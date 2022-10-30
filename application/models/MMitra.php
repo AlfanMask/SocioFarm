@@ -16,5 +16,22 @@ class MMitra extends CI_MODEL{
 
   }
 
+  public function insertMitra($data){
+    return $this->db->insert('tbl_mitra',$data);
+
+  }
+
+  public function getMitraById($id){
+    return $this->db->get_where('tbl_mitra',['id'=>$id])->result_array();
+  }
+
+  public function updateMitra($data, $id){
+    return $this->db->update('tbl_mitra',$data,['id'=>$id]);
+  }
+
+  public function deleteMitraById($id){
+    return $this->db->delete('tbl_mitra',['id'=>$id]);
+  }
+
 
 }

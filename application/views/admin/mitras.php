@@ -45,7 +45,8 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Mitras</h1>
+            <h1 class="m-0 mb-2">Mitras</h1>
+            <?= $this->session->flashdata('alert') ?>
             <a href="<?= base_url('admin/addmitra') ?>" class="btn btn-primary btn-orange" style="margin-top:20px; padding:10px 20px;">+ Tambah Mitra</a>
           </div><!-- /.col -->
           <div class="col-sm-6">

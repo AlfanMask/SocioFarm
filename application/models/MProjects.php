@@ -19,6 +19,24 @@ class MProjects extends CI_MODEL{
 
   public function inserProject($data){
     return $this->db->insert('tbl_projects',$data);
+
   }
+
+  public function getProjectById($id){
+    $query = $this->db->get_where('tbl_projects',['id' => $id])->result_array();
+    return $query;
+
+  }
+
+  public function updateProject($data, $id){
+    $this->db->where('id',$id);
+    return $this->db->update('tbl_projects',$data);
+
+  }
+
+  public function deleteprojectById($id){
+    return $this->db->delete('tbl_projects',['id' => $id]);
+  }
+
 
 }
