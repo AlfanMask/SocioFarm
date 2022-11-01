@@ -33,6 +33,11 @@ class Admin extends CI_CONTROLLER
 
   public function projects()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load all projects
     $this->load->model('MProjects');
     $data['projects'] = $this->MProjects->GetAllProjects();
@@ -44,6 +49,11 @@ class Admin extends CI_CONTROLLER
 
   public function mitras()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load all mitras
     $this->load->model('MMitra');
     $data['mitras'] = $this->MMitra->GetAllMitras();
@@ -55,6 +65,11 @@ class Admin extends CI_CONTROLLER
 
   public function addproject()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     $this->load->view('admin/header');
     $this->load->view('admin/addproject');
     $this->load->view('admin/footer');
@@ -62,6 +77,11 @@ class Admin extends CI_CONTROLLER
 
   public function addprojectnow()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     $nama_proyek = $_POST['nama_proyek'];
     $harga = $_POST['harga'];
     $deskripsi = $_POST['deskripsi'];
@@ -109,6 +129,11 @@ class Admin extends CI_CONTROLLER
 
   public function editproject($id)
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load Model
     $this->load->model('MProjects');
     $project = $this->MProjects->getProjectById($id)[0];
@@ -132,6 +157,11 @@ class Admin extends CI_CONTROLLER
 
   public function editprojectnow()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // create array of input datas
     $data = [
       'id' => $_POST['id'],
@@ -164,6 +194,11 @@ class Admin extends CI_CONTROLLER
 
   public function deleteProject($id)
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load model
     $this->load->model('MProjects');
     if ($this->MProjects->deleteprojectById($id)) {
@@ -178,6 +213,11 @@ class Admin extends CI_CONTROLLER
 
   public function addmitra()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     $this->load->view('admin/header');
     $this->load->view('admin/addmitra');
     $this->load->view('admin/footer');
@@ -185,6 +225,11 @@ class Admin extends CI_CONTROLLER
 
   public function addmitranow()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     $nama_mitra = $_POST['nama_mitra'];
     $alamat = $_POST['alamat'];
     $proyek = $_POST['proyek'];
@@ -222,6 +267,11 @@ class Admin extends CI_CONTROLLER
 
   public function editmitra($id)
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load Model
     $this->load->model('MMitra');
     $mitra = $this->MMitra->getMitraById($id)[0];
@@ -242,6 +292,11 @@ class Admin extends CI_CONTROLLER
 
   public function updatemitranow()
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // create array of input datas
     $data = [
       'id' => $_POST['id'],
@@ -267,6 +322,11 @@ class Admin extends CI_CONTROLLER
 
   public function deleteMitra($id)
   {
+    // if not admin, then kick him to homepage
+    if ($_SESSION['userole'] != 2) {
+      redirect('home');
+    }
+
     // load model
     $this->load->model('MMitra');
     if ($this->MMitra->deleteMitraById($id)) {
