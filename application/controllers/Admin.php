@@ -10,6 +10,7 @@ class Admin extends CI_CONTROLLER
     // load something
     $this->load->library('form_validation');
     $this->load->helper('form');
+    $this->load->helper('file');
   }
 
   public function index()
@@ -112,6 +113,18 @@ class Admin extends CI_CONTROLLER
       'video_url' => '#'
     ];
 
+    // upload images
+    $config['upload_path'] = 'uploads/proyek';
+    $config['allowed_types'] = 'jpg|jpeg|png';
+    $config['max_size'] = '1024';
+
+    $this->load->library('upload', $config);
+
+    if ($this->upload->do_upload('img_file')) {
+      $data_img = $this->upload->data();
+      $data['img_url'] = $data_img['file_name'];
+    }
+
     if ($this->form_validation->run() == false) {
       // show failed alert
       $this->session->set_flashdata('alert', '<div class="alert alert-danger" role="alert">Penambahan Proyek Gagal! Harap masukkan semua informasi yang dibutuhkan.</div>');
@@ -148,8 +161,6 @@ class Admin extends CI_CONTROLLER
       'img_url'     => $project['img_url']
     ];
 
-    var_dump($data);
-
     $this->load->view('admin/header');
     $this->load->view('admin/editproject', $data);
     $this->load->view('admin/footer');
@@ -161,6 +172,10 @@ class Admin extends CI_CONTROLLER
     if ($_SESSION['userole'] != 2) {
       redirect('home');
     }
+
+    // load model
+    $this->load->model('MProjects');
+    $projectData = $this->MProjects->getProjectById($_POST['id']);
 
     // create array of input datas
     $data = [
@@ -174,10 +189,25 @@ class Admin extends CI_CONTROLLER
       'description' => $_POST['deskripsi'],
       'roi_bot' => $_POST['roi_bot'],
       'roi_top' => $_POST['roi_top'],
-      'img_url' => $_POST['img_url'],
+      'img_url' => $projectData[0]['img_url'],
       'proposal_url' => '',
       'video_url' => '#'
     ];
+
+    // upload images
+    $config['upload_path'] = 'uploads/proyek';
+    $config['allowed_types'] = 'jpg|jpeg|png';
+    $config['max_size'] = '1024';
+
+    $this->load->library('upload', $config);
+
+    if ($this->upload->do_upload('img_url')) {
+      $data_img = $this->upload->data();
+      $data['img_url'] = $data_img['file_name'];
+
+      // delete old img
+      unlink('uploads/proyek/' . $projectData[0]['img_url']);
+    }
 
     // load model
     $this->load->model('MProjects');
@@ -201,7 +231,12 @@ class Admin extends CI_CONTROLLER
 
     // load model
     $this->load->model('MProjects');
+    $project = $this->MProjects->getProjectById($id);
+
     if ($this->MProjects->deleteprojectById($id)) {
+      // delete old img
+      unlink('uploads/proyek/' . $project[0]['img_url']);
+
       // show success alert
       $this->session->set_flashdata('alert', '<div class="alert alert-success" role="alert">Proyek Berhasil Dihapus!</div>');
     } else {
@@ -234,7 +269,6 @@ class Admin extends CI_CONTROLLER
     $alamat = $_POST['alamat'];
     $proyek = $_POST['proyek'];
     $deskripsi = $_POST['deskripsi'];
-    // $img_url = $_POST['img_url'];
 
     $this->form_validation->set_rules('nama_mitra', 'Nama Mitra', 'required');
     $this->form_validation->set_rules('alamat', 'Alamat Mitra', 'required');
@@ -249,6 +283,18 @@ class Admin extends CI_CONTROLLER
       'deskripsi' => $deskripsi,
       'img_url' => ''
     ];
+
+    // upload images
+    $config['upload_path'] = 'uploads/mitra';
+    $config['allowed_types'] = 'jpg|jpeg|png';
+    $config['max_size'] = '1024';
+
+    $this->load->library('upload', $config);
+
+    if ($this->upload->do_upload('img_url')) {
+      $data_img = $this->upload->data();
+      $data['img_url'] = $data_img['file_name'];
+    }
 
     if ($this->form_validation->run() == false) {
       // show failed alert
@@ -297,6 +343,10 @@ class Admin extends CI_CONTROLLER
       redirect('home');
     }
 
+    // load model
+    $this->load->model('MMitra');
+    $mitraData = $this->MMitra->getMitraById($_POST['id']);
+
     // create array of input datas
     $data = [
       'id' => $_POST['id'],
@@ -304,8 +354,23 @@ class Admin extends CI_CONTROLLER
       'alamat' => $_POST['alamat'],
       'proyek' => $_POST['proyek'],
       'deskripsi' => $_POST['deskripsi'],
-      'img_url' => ''
+      'img_url' => $mitraData[0]['img_url']
     ];
+
+    // upload images
+    $config['upload_path'] = 'uploads/mitra';
+    $config['allowed_types'] = 'jpg|jpeg|png';
+    $config['max_size'] = '1024';
+
+    $this->load->library('upload', $config);
+
+    if ($this->upload->do_upload('img_url')) {
+      $data_img = $this->upload->data();
+      $data['img_url'] = $data_img['file_name'];
+
+      // delete old img
+      unlink('uploads/mitra/' . $mitraData[0]['img_url']);
+    }
 
     // load model
     $this->load->model('MMitra');
@@ -329,7 +394,11 @@ class Admin extends CI_CONTROLLER
 
     // load model
     $this->load->model('MMitra');
+    $mitra = $this->MMitra->getMitraById($id);
     if ($this->MMitra->deleteMitraById($id)) {
+      // delete old img
+      unlink('uploads/mitra/' . $mitra[0]['img_url']);
+
       // show success alert
       $this->session->set_flashdata('alert', '<div class="alert alert-success" role="alert">Mitra Berhasil Dihapus!</div>');
     } else {
@@ -337,5 +406,10 @@ class Admin extends CI_CONTROLLER
     }
 
     redirect('admin/mitras');
+  }
+
+  public function generateRandomString($length = 10)
+  {
+    return substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
   }
 }
