@@ -125,7 +125,7 @@ function changePict4(){
 // SIMULASI
 const harga = document.querySelector('#harga');
 const elm_lembar = document.querySelector('#lembar');
-const elm_roi = document.querySelector('#roi');
+const elm_return = document.querySelector('#return');
 const elm_modal = document.querySelector('#modal');
 const elm_profit = document.querySelector('#profit');
 const elm_pendapatan = document.querySelector('#pendapatan');
@@ -133,8 +133,8 @@ const elm_pendapatan = document.querySelector('#pendapatan');
 // console.log('harga:' + harga.innerHTML.replace('.',''));
 
 function updateProfit(){
-  let modal = lembar.value*harga.innerHTML.replace('.','');
-  let profit = roi.value/100*modal;
+  let modal = lembar.value*harga.innerHTML.replace(/\./g,'');
+  let profit = (lembar.value*elm_return.value.replace('.','')*100)-modal;
   let pendapatan = modal + profit;
 
   modal = numberWithCommas(modal);
@@ -149,12 +149,12 @@ function updateProfit(){
   // elm_profit.innerHTML = 'Rp. ' + profit;
   // elm_pendapatan.innerHTML = 'Rp. ' + pendapatan;
 
-  console.log('lembar: ' + elm_lembar.value);
-  console.log('harga: ' + harga);
-  console.log('roi: ' + elm_roi.value);
-  console.log('modal: ' + modal);
-  console.log('profit: ' + profit);
-  console.log('pendapatan: ' + pendapatan);
+  // console.log('lembar: ' + elm_lembar.value);
+  // console.log('harga1: ' + harga.innerHTML.replace(/\./g,''));
+  // console.log('harga jual: ' + elm_return.value);
+  // console.log('modal: ' + modal);
+  // console.log('profit: ' + profit);
+  // console.log('pendapatan: ' + pendapatan);
 
 }
 

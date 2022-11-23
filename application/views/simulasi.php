@@ -1,20 +1,21 @@
 <div class="container">
-  <h5 class="h5-orange text-center" style="margin-top:20px;">SIMULASI</h5>
+  <h5 class="h5-orange text-center" style="margin-top:20px;">SIMULASI TERNAK BEBEK</h5>
 
   <div class="simulasi">
-    <p>Harga per lembar: Rp. <span id="harga"><?= number_format(500000,0,'.','.') ?></span></p>
+    <p>Harga per lembar: Rp. <span id="harga"><?= number_format(3750000,0,'.','.') ?></span></p>
     
     <div class="row">
       <div class="col-6">
-        <input type="number" name="lembar" id="lembar" value="0" min="0" onchange="updateProfit()">
+        <input type="number" name="lembar" id="lembar" value="0" min="0" onchange="updateProfit()" placeholder="Jumlah Paket">
       </div>
       <div class="col-6">
-        <select name="roi" id="roi" onchange="updateProfit()">
-          <option value="16">16%</option>
-          <option value="17">17%</option>
-          <option value="18">18%</option>
-          <option value="19">19%</option>
-          <option value="20">20%</option>
+        <select name="return" id="return" onchange="updateProfit()">
+          <option value="40.000">40.000</option>
+          <option value="41.000">41.000</option>
+          <option value="42.000">42.000</option>
+          <option value="43.000">43.000</option>
+          <option value="44.000">44.000</option>
+          <option value="45.000">45.000</option>
         </select>
       </div>
     </div>
