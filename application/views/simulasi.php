@@ -27,7 +27,7 @@
     </div>
     <!-- roi * modal -->
     <div class="form-group">
-      <label for="profit">Total Profit</label>
+      <label for="profit">Total Profit (40%)</label>
       <input class="input-full" type="text" name="profit" id="profit" value="" placeholder="Rp. 0" readonly>
     </div>
     <!-- modal + profit -->

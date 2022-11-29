@@ -134,7 +134,7 @@ const elm_pendapatan = document.querySelector('#pendapatan');
 
 function updateProfit(){
   let modal = lembar.value*harga.innerHTML.replace(/\./g,'');
-  let profit = (lembar.value*elm_return.value.replace('.','')*100)-modal;
+  let profit = (40/100)*((lembar.value*elm_return.value.replace('.','')*100)-modal);
   let pendapatan = modal + profit;
 
   modal = numberWithCommas(modal);
