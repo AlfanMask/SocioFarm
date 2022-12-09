@@ -17,6 +17,11 @@ class MProjects extends CI_MODEL{
     // return $this->db->get('tbl_projects')->result_array();
   }
 
+  public function GetProjectsByLimit($limit){
+    $query = $this->db->get('tbl_projects',$limit)->result_array();
+    return $query;
+  }
+
   public function inserProject($data){
     return $this->db->insert('tbl_projects',$data);
 

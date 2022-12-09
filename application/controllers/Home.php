@@ -15,7 +15,7 @@ class Home extends CI_Controller{
 
     // load ModelProjects
     $this->load->model('MProjects');
-    $data['homeProjects'] = $this->MProjects->GetAllProjects();
+    $data['homeProjects'] = $this->MProjects->GetProjectsByLimit(4);
 
     $this->load->view('templates/header', $data);
     $this->load->view('home', $data);

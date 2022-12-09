@@ -1,13 +1,13 @@
 <div class="single-proyek container text-center">
   <h5>PROYEK BERJALAN</h5>
-  <h1>Proyek Peternakan Kambing Jawa Bpk. Zainudin- Part 2</h1>
+  <h1><?= $project['name'] ?></h1>
 </div>
 
 <!-- SINGLE PROYEK GALLERY -->
 <div class="single-gallery container">
   <div class="row">
     <div class="gallery-show col-lg-10 col-md-10 col-sm-12">
-      <img src="<?= base_url('assets/img/slide1.png')?>" class="gallery-show-pict" alt="">
+      <img src="<?= base_url('uploads/proyek/').$project['img_url']?>" class="gallery-show-pict" alt="">
     </div>
     <div class="gallery-select col-lg-2 col-md-2 col-sm-12">
       <div onclick="changePict1()" class="pict-1">
@@ -40,8 +40,8 @@
       </div>
       <progress id="" value="90" max="100"></progress>
       <div class="invest-icon">
-        <p><i class="fa fa-check-square-o"></i> Harga 1 lembar: <strong>Rp.500.000</strong></p>
-        <p><i class="fa fa-check-square-o"></i> Perkiraan ROI: <strong>16%-20%</strong></p>
+        <p><i class="fa fa-check-square-o"></i> Harga Proyek: <strong>Rp. <?= number_format($project['price'],0,',','.')?></strong></p>
+        <p><i class="fa fa-check-square-o"></i> Perkiraan Harga Jual Tertinggi dan Terendah: <strong><?= $project['roi_top'] ?> - <?= $project['roi_bot'] ?></strong></p>
       </div>
     </div>
 
@@ -59,9 +59,9 @@
     
     <div class="left-desc col-lg-8 col-md-12 col-sm-12">
       <h3>Tentang Proyek</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis pharetra nunc erat vitae morbi volutpat, diam, pharetra, leo. Nisi sagittis ridiculus duis sapien. Id purus sapien aliquet vitae pretium cras purus. Facilisis mi arcu sit nibh lorem sit interdum. Sagittis pharetra, mauris tortor tellus nisl tristique euismod justo. Tortor neque diam pulvinar in ac quam pretium. Sit curabitur gravida ac blandit suscipit in pharetra, molestie feugiat. Nunc orci magna quam nec elementum egestas dolor.<br><br>Lacus, sed neque, nascetur donec quam nisi mattis. Ac pellentesque gravida at ipsum. Id amet nulla eget pulvinar morbi suspendisse tellus blandit. Amet tincidunt ac dictum lorem. Ultricies sit tincidunt ornare purus. Nulla mauris mollis nunc, varius. Aliquam orci imperdiet elit tincidunt sed ut aliquet libero.</p>
+      <p><?= $project['description'] ?></p>
       <div class="btn-desc">
-        <a href="#" class="btn btn-primary btn-proposal">Baca Proposal</a>
+        <a href="<?= base_url('uploads/proposal/proposal_bebek_peking.pdf') ?>" target="_blank" class="btn btn-primary btn-proposal">Baca Proposal</a>
         <a href="#" class="btn btn-primary btn-video">Lihat Video</a>
       </div>
     </div>

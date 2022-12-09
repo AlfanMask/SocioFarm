@@ -35,7 +35,7 @@
         <?php foreach($homeProjects as $hp): ?>
           <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
             <div class="card" style="width: 18rem;">
-              <div class="img-card-home-project"><img src="<?= base_url('assets/img/').$hp['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
+              <div class="img-card-home-project"><img src="<?= base_url('uploads/proyek/').$hp['img_url'] ?>" class="card-img-top" alt="..." style="height: 240px"></div>
               <div class="card-body">
                 <div class="fa-roi">
                   <p>ROI <?= $hp['roi_bot'] ?>% - <?= $hp['roi_top'] ?>%</p>
