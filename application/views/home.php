@@ -7,13 +7,13 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img src="<?= base_url('assets/img/slide1.png') ?>" class="d-block w-100" alt="...">
+      <img src="<?= base_url('assets/img/slide_home_1.jpg') ?>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="<?= base_url('assets/img/slide2.png') ?>" class="d-block w-100" alt="...">
+      <img src="<?= base_url('assets/img/slide_home_2.jpg') ?>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="<?= base_url('assets/img/slide3.png') ?>" class="d-block w-100" alt="...">
+      <img src="<?= base_url('assets/img/slide_home_3.jpg') ?>" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <img class="img-tentang-kami" src="<?= base_url('assets/img/img-tentang-kami.png') ?>" alt="" style="width:100%;border-radius: 40px;">
+          <img class="img-tentang-kami" src="<?= base_url('assets/img/slide_home_2.jpg') ?>" alt="" style="width:100%;border-radius: 40px;">
         </div>
       </div>
       <div class="keunggulan-kami">

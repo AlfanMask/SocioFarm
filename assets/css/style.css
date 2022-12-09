@@ -93,7 +93,10 @@ li.nav-item {
 
 /* HOME-CAROUSEL */
 .carousel-item img {
+	height: 650px !important;
 	border-radius: 10px;
+	background-size: cover;
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
 }
 
 /* HOME-PROJECTS */
